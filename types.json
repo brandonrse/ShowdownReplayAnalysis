@@ -1,0 +1,79 @@
+{
+  "Bug": {
+    "icon": "images/types/Bug SV.png",
+    "teraIcon": "images/types/Bug SV Tera.png"
+  },
+  "Dark": {
+    "icon": "images/types/Dark SV.png",
+    "teraIcon": "images/types/Dark SV Tera.png"
+  },
+  "Dragon": {
+    "icon": "images/types/Dragon SV.png",
+    "teraIcon": "images/types/Dragon SV Tera.png"
+  },
+  "Electric": {
+    "icon": "images/types/Electric SV.png",
+    "teraIcon": "images/types/Electric SV Tera.png"
+  },
+  "Fairy": {
+    "icon": "images/types/Fairy SV.png",
+    "teraIcon": "images/types/Fairy SV Tera.png"
+  },
+  "Fighting": {
+    "icon": "images/types/Fighting SV.png",
+    "teraIcon": "images/types/Fighting SV Tera.png"
+  },
+  "Fire": {
+    "icon": "images/types/Fire SV.png",
+    "teraIcon": "images/types/Fire SV Tera.png"
+  },
+  "Flying": {
+    "icon": "images/types/Flying SV.png",
+    "teraIcon": "images/types/Flying SV Tera.png"
+  },
+  "Ghost": {
+    "icon": "images/types/Ghost SV.png",
+    "teraIcon": "images/types/Ghost SV Tera.png"
+  },
+  "Grass": {
+    "icon": "images/types/Grass SV.png",
+    "teraIcon": "images/types/Grass SV Tera.png"
+  },
+  "Ground": {
+    "icon": "images/types/Ground SV.png",
+    "teraIcon": "images/types/Ground SV Tera.png"
+  },
+  "Ice": {
+    "icon": "images/types/Ice SV.png",
+    "teraIcon": "images/types/Ice SV Tera.png"
+  },
+  "Normal": {
+    "icon": "images/types/Normal SV.png",
+    "teraIcon": "images/types/Normal SV Tera.png"
+  },
+  "Poison": {
+    "icon": "images/types/Poison SV.png",
+    "teraIcon": "images/types/Poison SV Tera.png"
+  },
+  "Psychic": {
+    "icon": "images/types/Psychic SV.png",
+    "teraIcon": "images/types/Psychic SV Tera.png"
+  },
+  "Rock": {
+    "icon": "images/types/Rock SV.png",
+    "teraIcon": "images/types/Rock SV Tera.png"
+  },
+  "Steel": {
+    "icon": "images/types/Steel SV.png",
+    "teraIcon": "images/types/Steel SV Tera.png"
+  },
+  "Stellar": {
+    "icon": "images/types/Stellar SV Tera-1.png",
+    "teraIcon": "images/types/Stellar SV Tera-1.png"
+  },
+  "Water": {
+    "icon": "images/types/Water SV.png",
+    "teraIcon": "images/types/Water SV Tera.png"
+  }
+
+}
