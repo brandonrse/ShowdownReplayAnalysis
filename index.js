@@ -128,14 +128,7 @@ function splitLog(log) {
       case "switch":
       case "drag":
         if (!Object.keys(PokemonData).includes(splitLine[2])) {
-          PokemonData[splitLine[2]] = {};
-          PokemonData[splitLine[2]].hp = splitLine[4];
-          PokemonData[splitLine[2]].moves = new Set([]);
-          PokemonData[splitLine[2]].kos = new Set([]);
-          PokemonData[splitLine[2]].species = splitLine[3];
-          PokemonData[splitLine[2]].tera = "";
-          PokemonData[splitLine[2]].ability = "";
-          PokemonData[splitLine[2]].item = "";
+          createPokemonData(splitLine[2], splitLine[4], splitLine[3]);
         }
         break;
 
@@ -256,6 +249,33 @@ function splitLog(log) {
         break;
     }
   };
+
+  let pokemonFound = new Set();
+  P1PokemonParty.forEach(pkmn => {
+    for (const data in PokemonData) {
+      if (PokemonData[data].species == pkmn) {
+        pokemonFound.add(pkmn);
+      }
+    }
+    if (!pokemonFound.has(pkmn)) {
+      createPokemonData("p1a: " + pkmn, "100/100", pkmn);
+    }
+  });
+
+  P2PokemonParty.forEach(pkmn => {
+    for (const data in PokemonData) {
+      if (PokemonData[data].species == pkmn) {
+        pokemonFound.add(pkmn);
+      }
+    }
+    if (!pokemonFound.has(pkmn)) {
+      createPokemonData("p2a: " + pkmn, "100/100", pkmn);
+    }
+  });
+
+  console.log(PokemonData);
+  console.log(P1PokemonParty);
+  console.log(P2PokemonParty);
 }
 
 function displayRules() {
@@ -356,6 +376,9 @@ function avatarCheck(avatar) {
   switch (avatar) {
     case "2":
       return "dawn";
+
+    case "266":
+      return "nate";
   
     default:
       return avatar;
@@ -364,7 +387,6 @@ function avatarCheck(avatar) {
 
 function pokemon() {
   let party = document.getElementsByClassName("party");
-
   
   for (const pokemon in PokemonData) {
     pkmn = PokemonData[pokemon];
@@ -568,7 +590,6 @@ function clearAll() {
 }
 
 function pokemonFormItem(species) {
-  console.log(species);
   switch (species) {
     case "Groudon-Primal":
       return "Red Orb";
@@ -793,4 +814,15 @@ function pokemonFormItem(species) {
       break;
   }
   return "";
+}
+
+function createPokemonData(nickname, hp, species) {
+  PokemonData[nickname] = {};
+  PokemonData[nickname].hp = hp;
+  PokemonData[nickname].moves = new Set([]);
+  PokemonData[nickname].kos = new Set([]);
+  PokemonData[nickname].species = species;
+  PokemonData[nickname].tera = "";
+  PokemonData[nickname].ability = "";
+  PokemonData[nickname].item = "";
 }
