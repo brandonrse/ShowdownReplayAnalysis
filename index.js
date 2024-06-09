@@ -87,16 +87,17 @@ function splitLog(log) {
 
   for (let i = 0; i < splitLog.length; i++) {
     let splitLine = splitLog[i].split("|");
-
     switch (splitLine[1]) {
       case "player":
-        if (splitLine[2] == "p1") {
-          player1 = splitLine[3];
-          player1Avatar = splitLine[4];
-        }
-        if (splitLine[2] == "p2") {
-          player2 = splitLine[3];
-          player2Avatar = splitLine[4];
+        if (splitLine.length > 3) {
+          if (splitLine[2] == "p1") {
+            player1 = splitLine[3];
+            player1Avatar = splitLine[4];
+          }
+          if (splitLine[2] == "p2") {
+            player2 = splitLine[3];
+            player2Avatar = splitLine[4];
+          }
         }
         break;
       
@@ -307,47 +308,49 @@ function displayRules() {
   let chatCol = document.createElement("div");
   chatCol.className = "col-6";
 
-  let chatHeader = document.createElement("h2");
-  chatHeader.textContent = "Chatlog";
-  chatCol.appendChild(chatHeader);
-  
-  let groupDiv = document.createElement("div");
-  groupDiv.className = "overflow-auto";
-  
-  let listGroupDiv = document.createElement("div");
-  listGroupDiv.className = "list-group";
-  listGroupDiv.style.maxHeight = "500px";
-
-  chat.forEach(msg => {
-    let itemHref = document.createElement("a");
-    itemHref.className = "list-group-item list-group-item-action chat-message";
-    itemHref.href = "#";
+  if (chat.length > 0) {
+    let chatHeader = document.createElement("h2");
+    chatHeader.textContent = "Chatlog";
+    chatCol.appendChild(chatHeader);
     
-    let chatContentDiv = document.createElement("div");
-    chatContentDiv.className = "d-flex w-100 justify-content-between";
+    let groupDiv = document.createElement("div");
+    groupDiv.className = "overflow-auto";
     
-    let chatPlayerHeading = document.createElement("h5");
-    chatPlayerHeading.className = "mb-1";
-    chatPlayerHeading.textContent = msg[1];
+    let listGroupDiv = document.createElement("div");
+    listGroupDiv.className = "list-group";
+    listGroupDiv.style.maxHeight = "500px";
 
-    let chatMsg = document.createElement("p");
-    chatMsg.className = "mb-1";
-    chatMsg.textContent = msg[2];
+    chat.forEach(msg => {
+      let itemHref = document.createElement("a");
+      itemHref.className = "list-group-item list-group-item-action chat-message";
+      itemHref.href = "#";
+      
+      let chatContentDiv = document.createElement("div");
+      chatContentDiv.className = "d-flex w-100 justify-content-between";
+      
+      let chatPlayerHeading = document.createElement("h5");
+      chatPlayerHeading.className = "mb-1";
+      chatPlayerHeading.textContent = msg[1];
 
-    let chatTurnSmall = document.createElement("small");
-    chatTurnSmall.textContent = msg[0];
-    chatTurnSmall.className = "text-muted";
+      let chatMsg = document.createElement("p");
+      chatMsg.className = "mb-1";
+      chatMsg.textContent = msg[2];
 
-    chatContentDiv.appendChild(chatPlayerHeading);
-    chatContentDiv.appendChild(chatTurnSmall);
-    itemHref.appendChild(chatContentDiv);
-    itemHref.appendChild(chatMsg);
-    listGroupDiv.appendChild(itemHref);
+      let chatTurnSmall = document.createElement("small");
+      chatTurnSmall.textContent = msg[0];
+      chatTurnSmall.className = "text-muted";
 
-  });
-  groupDiv.appendChild(listGroupDiv);
+      chatContentDiv.appendChild(chatPlayerHeading);
+      chatContentDiv.appendChild(chatTurnSmall);
+      itemHref.appendChild(chatContentDiv);
+      itemHref.appendChild(chatMsg);
+      listGroupDiv.appendChild(itemHref);
+
+    });
+    groupDiv.appendChild(listGroupDiv);
+    chatCol.appendChild(groupDiv);
+  }
   rulesDiv.appendChild(rulesCol);
-  chatCol.appendChild(groupDiv);
   rulesDiv.appendChild(chatCol);
 }
 
@@ -382,6 +385,12 @@ function avatarCheck(avatar) {
     case "2":
       return "dawn";
 
+    case "37":
+      return "beauty-gen4dp";
+
+    case "159":
+      return "sabrina";
+
     case "266":
       return "nate";
   
@@ -396,7 +405,13 @@ function pokemon() {
   for (const pokemon in PokemonData) {
     pkmn = PokemonData[pokemon];
     let pokemonName = pkmn.species.split(", ")[0];
+
     let pokemonGender = pkmn.species.split(", ")[1];
+    if (pkmn.species.split(", ")[1] != "shiny") {
+      pokemonGender = pkmn.species.split(", ")[1];
+    } else {
+      pokemonGender = "";
+    }
 
     let pokemonDiv = document.createElement("div");
     pokemonDiv.className = "pokemon";
@@ -407,7 +422,7 @@ function pokemon() {
     //Name
     let nicknameP = document.createElement("p");
     nicknameP.className = "nickname";
-    nicknameP.textContent = pokemon.startsWith("p1a: ") ? pokemon.split("p1a: ")[1] : pokemon.split("p2a: ")[1];
+    nicknameP.textContent = pokemon.startsWith("p1a: ") ? pokemon.split("p1a: ")[1].split(", ")[0] : pokemon.split("p2a: ")[1].split(", ")[0];
     pokemonCol.appendChild(nicknameP);
 
     let species = document.createElement("p");
