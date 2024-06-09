@@ -432,7 +432,15 @@ function pokemon() {
       pokemonAbility.innerText = pkmn.ability;
     }
     else {
-      pokemonAbility.innerText = "??????"
+      if (tier != "Almost Any Ability" && tier != "Balanced Hackmons" && tier != "[Gen 7] Pure Hackmons" && !tier.startsWith("[Gen 1]") && !tier.startsWith("[Gen 2]")) {
+        pokemonAbility.innerText = oneAbilityCheck(pkmn.species.split(", ")[0], tier)    
+      }
+      else if (tier.startsWith("[Gen 1]") || tier.startsWith("[Gen 2]")) {
+        pokemonAbility.innerText = "No Ability"
+      }
+      else {
+        pokemonAbility.innerText = "??????"
+      }
     }
     pokemonCol.appendChild(pokemonAbility);
 
@@ -845,4 +853,72 @@ function createPokemonData(nickname, hp, species) {
   PokemonData[nickname].tera = "";
   PokemonData[nickname].ability = "";
   PokemonData[nickname].item = "";
+}
+
+function oneAbilityCheck(species, tier) {
+  let ability = "";
+  switch (species) {
+    case "Pidgey":
+    case "Pidgeotto":
+    case "Pidgeot":
+    case "Nidoran-F":
+    case "Nidorina":
+    case "Nidoqueen":
+    case "Nidoran-M":
+    case "Nidorino":
+    case "Nidoking":
+    case "Cleffa":
+    case "Clefairy":
+    case "Clefable":
+    case "Paras":
+    case "Parasect":
+    case "Venonat":
+    case "Venomoth":
+    case "Meowth":
+    case "Persian":
+    case "Mankey":
+    case "Primeape":
+    case "Machop":
+    case "Machoke":
+    case "Machamp":
+    case "Seel":
+    case "Dewgong":
+    case "Shellder":
+    case "Cloyster":
+    case "Drowzee":
+    case "Hypno":
+    case "Hitmonlee":
+    case "Hitmonchan":
+      if (tier.startsWith("[Gen 3]")) {
+        ability = pokemonJSON[species.toUpperCase()].abilities[0];
+      } else {
+        ability = "??????"
+      }
+      break;
+    
+    case "Igglybuff":
+    case "Jigglypuff":
+    case "Wigglytuff":
+      if (tier.startsWith("[Gen 3]") || tier.startsWith("[Gen 4]") || tier.startsWith("[Gen 5]")) {
+        ability = pokemonJSON[species.toUpperCase()].abilities[0];
+      } else {
+        ability = "??????"
+      }
+      break;
+  
+    default:
+      if (Object.hasOwn(pokemonJSON[species.toUpperCase()], "abilities")) {
+        if (pokemonJSON[species.toUpperCase()].abilities.length == 1 && pokemonJSON[species.toUpperCase()].hiddenAbility.length == 0) {
+          ability = pokemonJSON[species.toUpperCase()].abilities[0];
+        }
+        else {
+          ability = "??????"
+        }
+      } 
+      else {
+        ability = "??????"
+      }
+      break;
+  }
+  return ability;
 }
