@@ -110,6 +110,9 @@ function splitLog(log) {
         break;
 
       case "poke":
+        if (splitLine[3] == "Genesect-*") {
+        splitLine[3] = "Genesect";
+      }
         if (splitLine[2] == "p1") P1PokemonParty.push(splitLine[3]);
         if (splitLine[2] == "p2") P2PokemonParty.push(splitLine[3]);
         break;
@@ -129,29 +132,33 @@ function splitLog(log) {
       case "switch":
       case "drag":
         if (!Object.keys(PokemonData).includes(splitLine[2])) {
-          createPokemonData(splitLine[2], splitLine[4], splitLine[3]);
+          if (!splitLine[3].includes("-Mega")) {
+            createPokemonData(splitLine[2], splitLine[4], splitLine[3]);
+          }
         }
         break;
 
       case "move":
-        PokemonData[splitLine[2]].moves.add(splitLine[3]);
+        let pokemonNicknameMove = getPokemonName(splitLine[2]);
+        PokemonData[pokemonNicknameMove].moves.add(splitLine[3]);
         if (splitLine[3] == "Stealth Rock") {
-          if (splitLine[2].startsWith("p1a: ")) {
-            stealthRockSetterP1 = splitLine[2];
+          if (pokemonNicknameMove.startsWith("p1")) {
+            stealthRockSetterP1 = pokemonNicknameMove;
           }
-          else if (splitLine[2].startsWith("p2a: ")) {
-            stealthRockSetterP2 = splitLine[2];
+          else if (pokemonNicknameMove.startsWith("p2")) {
+            stealthRockSetterP2 = pokemonNicknameMove;
           }
         }
         break;
 
       case "-damage":
-        PokemonData[splitLine[2]].hp = splitLine[3];
+        let pokemonNicknameDmg = getPokemonName(splitLine[2]);
+        PokemonData[pokemonNicknameDmg].hp = splitLine[3];
 
         //Life Orb
         if (splitLine.length == 5) {
-          if (splitLine[4].startsWith("[from] item: ") && PokemonData[splitLine[2]].item == "") {
-            PokemonData[splitLine[2]].item = splitLine[4].split("[from] item: ")[1]
+          if (splitLine[4].startsWith("[from] item: ") && PokemonData[pokemonNicknameDmg].item == "") {
+            PokemonData[pokemonNicknameDmg].item = splitLine[4].split("[from] item: ")[1]
           }
         }
 
@@ -170,18 +177,22 @@ function splitLog(log) {
           let defeatedBy = splitLog[i-count].split("|");
 
           if (splitLine[4] == "[from] Stealth Rock") {
-            if (splitLine[2].startsWith("p1a: ")) { 
+            if (splitLine[2].startsWith("p1")) { 
               PokemonData[stealthRockSetterP2].kos.add(splitLine[2]);
             }
-            else if (splitLine[2].startsWith("p2a: ")) {
+            else if (splitLine[2].startsWith("p2")) {
               PokemonData[stealthRockSetterP1].kos.add(splitLine[2]);
             }
-          } else {
+          }
+          else if (splitLine[4] == "[from] item: Life Orb") {
+            // Nothing happens
+          } 
+          else {
             while(defeatedBy[1] !== "move") {
               count += 1;
               defeatedBy = splitLog[i-count].split("|");
             }
-            PokemonData[defeatedBy[2]].kos.add(splitLine[2]);
+            PokemonData[getPokemonName(defeatedBy[2])].kos.add(getPokemonName(splitLine[2]));
           }
         }
         break;
@@ -191,7 +202,8 @@ function splitLog(log) {
         break;
 
       case "-ability":
-        PokemonData[splitLine[2]].ability = splitLine[3];
+        let pokemonNicknameAbility = getPokemonName(splitLine[2]);
+        PokemonData[pokemonNicknameAbility].ability = splitLine[3];
         break;
 
       case "-fieldstart":
@@ -215,15 +227,16 @@ function splitLog(log) {
         break;
       
       case "-heal":
+        let pokemonNicknameHeal = getPokemonName(splitLine[2]);
         if (splitLine.length > 4) {
           if (splitLine[4].startsWith("[from] item: ")) {
             let item = splitLine[4].split("[from] item: ")[1];
-            if (PokemonData[splitLine[2]].item == "") {
-              PokemonData[splitLine[2]].item = item;
+            if (PokemonData[pokemonNicknameHeal].item == "") {
+              PokemonData[pokemonNicknameHeal].item = item;
             }
           }
         }
-        PokemonData[splitLine[2]].hp = splitLine[3];
+        PokemonData[pokemonNicknameHeal].hp = splitLine[3];
         break;
 
       case "-item":
@@ -250,8 +263,14 @@ function splitLog(log) {
         break;
 
       case "-enditem":
-        if (PokemonData[splitLine[2]].item == "") {
-          PokemonData[splitLine[2]].item = splitLine[3];
+        if (PokemonData[getPokemonName(splitLine[2])].item == "") {
+          PokemonData[getPokemonName(splitLine[2])].item = splitLine[3];
+        }
+        break;
+
+      case "-mega":
+        if (PokemonData[getPokemonName(splitLine[2])].item == "") {
+          PokemonData[getPokemonName(splitLine[2])].item = splitLine[4];
         }
         break;
 
@@ -259,7 +278,6 @@ function splitLog(log) {
         break;
     }
   };
-
   let pokemonFound = new Set();
   P1PokemonParty.forEach(pkmn => {
     for (const data in PokemonData) {
@@ -268,7 +286,7 @@ function splitLog(log) {
       }
     }
     if (!pokemonFound.has(pkmn)) {
-      createPokemonData("p1a: " + pkmn, "100/100", pkmn);
+      createPokemonData("p1: " + pkmn, "100/100", pkmn);
     }
   });
 
@@ -279,7 +297,7 @@ function splitLog(log) {
       }
     }
     if (!pokemonFound.has(pkmn)) {
-      createPokemonData("p2a: " + pkmn, "100/100", pkmn);
+      createPokemonData("p2: " + pkmn, "100/100", pkmn);
     }
   });
 }
@@ -391,6 +409,12 @@ function avatarCheck(avatar) {
     case "159":
       return "sabrina";
 
+    case "212":
+      return "pilot";
+
+    case "223":
+      return "iris";
+
     case "266":
       return "nate";
   
@@ -404,6 +428,7 @@ function pokemon() {
   
   for (const pokemon in PokemonData) {
     pkmn = PokemonData[pokemon];
+
     let pokemonName = pkmn.species.split(", ")[0];
 
     let pokemonGender = pkmn.species.split(", ")[1];
@@ -418,11 +443,16 @@ function pokemon() {
 
     let pokemonCol = document.createElement("div");
     pokemonCol.className = "col-5";
-
     //Name
     let nicknameP = document.createElement("p");
     nicknameP.className = "nickname";
-    nicknameP.textContent = pokemon.startsWith("p1a: ") ? pokemon.split("p1a: ")[1].split(", ")[0] : pokemon.split("p2a: ")[1].split(", ")[0];
+
+    if (pokemon.startsWith("p1: ")) {
+      nicknameP.textContent = pokemon.split("p1: ")[1].split(", ")[0]
+    }
+    else if (pokemon.startsWith("p2: ")) {
+      nicknameP.textContent = pokemon.split("p2: ")[1].split(", ")[0]
+    }
     pokemonCol.appendChild(nicknameP);
 
     let species = document.createElement("p");
@@ -603,10 +633,10 @@ function pokemon() {
     pokemonDiv.appendChild(koCol);
     
 
-    if (pokemon.startsWith("p1a:")) {
+    if (pokemon.startsWith("p1: ")) {
       party[0].appendChild(pokemonDiv);
     }
-    else if (pokemon.startsWith("p2a:")) {
+    else if (pokemon.startsWith("p2: ")) {
       party[1].appendChild(pokemonDiv);
     }
   };
@@ -860,14 +890,36 @@ function pokemonFormItem(species) {
 }
 
 function createPokemonData(nickname, hp, species) {
-  PokemonData[nickname] = {};
-  PokemonData[nickname].hp = hp;
-  PokemonData[nickname].moves = new Set([]);
-  PokemonData[nickname].kos = new Set([]);
-  PokemonData[nickname].species = species;
-  PokemonData[nickname].tera = "";
-  PokemonData[nickname].ability = "";
-  PokemonData[nickname].item = "";
+  let newNickname = nickname;
+  let trainer = "";
+
+  if (nickname.startsWith("p1a: ")) {
+    newNickname = "p1: " + nickname.split("p1a: ")[1];
+    trainer = "p1";
+  }  
+  else if (nickname.startsWith("p1b: ")) {
+    newNickname = "p1: " + nickname.split("p1b: ")[1];
+    trainer = "p1"
+  }
+  else if (nickname.startsWith("p2a: ")) {
+    newNickname = "p2: " + nickname.split("p2a: ")[1];
+    trainer = "p2"
+  }
+  else if (nickname.startsWith("p2b: ")) {
+    newNickname = "p2: " + nickname.split("p2b: ")[1];
+    trainer = "p2"
+  }
+  
+  PokemonData[newNickname] = {};
+  PokemonData[newNickname].hp = hp;
+  PokemonData[newNickname].moves = new Set([]);
+  PokemonData[newNickname].kos = new Set([]);
+  PokemonData[newNickname].species = species;
+  PokemonData[newNickname].tera = "";
+  PokemonData[newNickname].ability = "";
+  PokemonData[newNickname].item = "";
+  PokemonData[newNickname].trainer = trainer;
+  
 }
 
 function oneAbilityCheck(species, tier) {
@@ -936,4 +988,21 @@ function oneAbilityCheck(species, tier) {
       break;
   }
   return ability;
+}
+
+function getPokemonName(nickname) {
+  let newNickname = nickname;
+  if (nickname.startsWith("p1a: ")) {
+    newNickname = "p1: " + nickname.split("p1a: ")[1];
+  }  
+  else if (nickname.startsWith("p1b: ")) {
+    newNickname = "p1: " + nickname.split("p1b: ")[1];
+  }
+  else if (nickname.startsWith("p2a: ")) {
+    newNickname = "p2: " + nickname.split("p2a: ")[1];
+  }
+  else if (nickname.startsWith("p2b: ")) {
+    newNickname = "p2: " + nickname.split("p2b: ")[1];
+  }
+  return newNickname;
 }
