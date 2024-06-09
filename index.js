@@ -411,11 +411,9 @@ function pokemon() {
     pokemonCol.appendChild(nicknameP);
 
     let species = document.createElement("p");
-    if (PokemonData[pokemon].species.split(", ")[0] != nicknameP.textContent) {
-      species.className = "species";
-      species.textContent = PokemonData[pokemon].species.split(", ")[0];
-      pokemonCol.appendChild(species);
-    }
+    species.className = "species";
+    species.textContent = PokemonData[pokemon].species.split(", ")[0];
+    pokemonCol.appendChild(species);
 
     //Image
     let pokemonImg = document.createElement("img");
@@ -428,17 +426,20 @@ function pokemon() {
     iconRow.className = "row";
 
     //Ability
+    let pokemonAbility = document.createElement("p");
+    pokemonAbility.className = "ability";
     if (pkmn.ability !== "") {
-      let pokemonAbility = document.createElement("p");
-      pokemonAbility.className = "ability";
       pokemonAbility.innerText = pkmn.ability;
-      pokemonCol.appendChild(pokemonAbility);
     }
+    else {
+      pokemonAbility.innerText = "??????"
+    }
+    pokemonCol.appendChild(pokemonAbility);
 
     //Gender
     if (pokemonGender != "" && pokemonGender != undefined) {
       let genderCol = document.createElement("div");
-      genderCol.className = "col-3";
+      genderCol.className = "col-2";
       
       let genderImg = document.createElement("img");
       genderImg.src = pokemonGender == undefined ? "" : "./images/" + pokemonGender + ".png";
@@ -448,6 +449,20 @@ function pokemon() {
       genderCol.appendChild(genderImg);
       iconRow.appendChild(genderCol);
     }
+    // Tera Type
+    if (pkmn.tera != "" && pkmn.tera != undefined) {
+      let teraCol = document.createElement("div");
+      teraCol.className = "col-2";
+
+      let teraImg = document.createElement("img");
+      teraImg.src = pkmn.tera = "" ? "" : "./images/types/" + pkmn.tera + " SV Tera.png";
+      teraImg.alt = "Tera " + pkmn.tera;
+      teraImg.className = "tera-icon"
+
+      teraCol.appendChild(teraImg);
+      iconRow.appendChild(teraCol);
+    }
+
     // Held Item
     let formItem = pokemonFormItem(pkmn.species.split(", ")[0]);
     if (formItem !== "") {
@@ -457,7 +472,7 @@ function pokemon() {
     if (pkmn.item !== "") {
 
       let itemCol = document.createElement("div");
-      itemCol.className = "col-3";
+      itemCol.className = "col-2";
 
       let itemImg = document.createElement("img");
       itemImg.src = "./images/items/" + pkmn.item + " SV.png";

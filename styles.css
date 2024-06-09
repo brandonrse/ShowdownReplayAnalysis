@@ -32,6 +32,10 @@
   width: 25px;
 }
 
+.tera-icon {
+  width: 50px;
+}
+
 .pokemon {
   display: flex;
   border: 3px solid rgb(157, 157, 157);
@@ -40,6 +44,7 @@
   color: white;
   background-color: #5a6570;
   border-radius: 3px;
+  height: 305px;
 }
 
 .moves {
