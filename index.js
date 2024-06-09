@@ -156,6 +156,13 @@ function splitLog(log) {
 
         //TODO: Rocky Helmet
         //TODO: Poison
+        //TODO: Flame Orb
+        //TODO: Toxic Orb (no credit)
+        //TODO: Fling/Trick/Switcheroo
+        //TODO: Confusion
+        //TODO: Self-inflicted Confusion (no credit)
+        //TODO: Stealth Rock when another Pokemon uses Stealth Rock but fails
+        //TODO: Victor & Loser
 
         if (splitLine[3] == "0 fnt") {
           let count = 1;
@@ -219,23 +226,25 @@ function splitLog(log) {
         break;
 
       case "-item":
-        if (splitLine[4].startsWith("[from] move: Trick")) {
-          let item2 = splitLine[3];
-          let pokemon1 = splitLine[2];
-
-          let nextLine = splitLog[i+1].split("|");
-
-          let item1 = nextLine[3];
-          let pokemon2 = nextLine[2];
-
-          if (PokemonData[pokemon1].item == "") {
-            PokemonData[pokemon1].item = item1;
+        if (splitLine.length > 4) {
+          if (splitLine[4].startsWith("[from] move: Trick")) {
+            let item2 = splitLine[3];
+            let pokemon1 = splitLine[2];
+  
+            let nextLine = splitLog[i+1].split("|");
+  
+            let item1 = nextLine[3];
+            let pokemon2 = nextLine[2];
+  
+            if (PokemonData[pokemon1].item == "") {
+              PokemonData[pokemon1].item = item1;
+            }
+            if (PokemonData[pokemon2].item == "") {
+              PokemonData[pokemon2].item = item2;
+            }
+  
+            i += 1;
           }
-          if (PokemonData[pokemon2].item == "") {
-            PokemonData[pokemon2].item = item2;
-          }
-
-          i += 1;
         }
         break;
 
@@ -272,10 +281,6 @@ function splitLog(log) {
       createPokemonData("p2a: " + pkmn, "100/100", pkmn);
     }
   });
-
-  console.log(PokemonData);
-  console.log(P1PokemonParty);
-  console.log(P2PokemonParty);
 }
 
 function displayRules() {
