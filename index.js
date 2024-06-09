@@ -280,7 +280,7 @@ function splitLog(log) {
   let pokemonFound = new Set();
   P1PokemonParty.forEach(pkmn => {
     for (const data in PokemonData) {
-      if (PokemonData[data].species == pkmn) {
+      if (PokemonData[data].species.startsWith(pkmn)) {
         pokemonFound.add(pkmn);
       }
     }
@@ -291,7 +291,7 @@ function splitLog(log) {
 
   P2PokemonParty.forEach(pkmn => {
     for (const data in PokemonData) {
-      if (PokemonData[data].species == pkmn) {
+      if (PokemonData[data].species.startsWith(pkmn)) {
         pokemonFound.add(pkmn);
       }
     }
@@ -430,7 +430,6 @@ function avatarCheck(avatar) {
 
 function pokemon() {
   let party = document.getElementsByClassName("party");
-  
   for (const pokemon in PokemonData) {
     pkmn = PokemonData[pokemon];
 
