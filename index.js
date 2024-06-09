@@ -89,7 +89,7 @@ function splitLog(log) {
     let splitLine = splitLog[i].split("|");
     switch (splitLine[1]) {
       case "player":
-        if (splitLine.length > 3) {
+        if (splitLine.length > 4) {
           if (splitLine[2] == "p1") {
             player1 = splitLine[3];
             player1Avatar = splitLine[4];
@@ -220,8 +220,7 @@ function splitLog(log) {
           if (splitLine[3].startsWith("[from] ability:")) {
             let splitAbility = splitLine[3].split("[from] ability: ");
             let abilityPokemon = splitLine[4].split("[of] ");
-  
-            PokemonData[abilityPokemon[1]].ability = splitAbility[1];
+            PokemonData[getPokemonName(abilityPokemon[1])].ability = splitAbility[1];
           }
         }
         break;
@@ -409,6 +408,9 @@ function avatarCheck(avatar) {
     case "159":
       return "sabrina";
 
+    case "170":
+      return "hilda";
+
     case "212":
       return "pilot";
 
@@ -418,6 +420,9 @@ function avatarCheck(avatar) {
     case "266":
       return "nate";
   
+    case undefined:
+      return "dawn";
+
     default:
       return avatar;
   }
