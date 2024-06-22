@@ -211,7 +211,7 @@ function splitLog(log) {
           let splitAbility = splitLine[3].split("[from] ability: ");
           let abilityPokemon = splitLine[4].split("[of] ");
 
-          PokemonData[abilityPokemon[1]].ability = splitAbility[1];
+          PokemonData[getPokemonName(abilityPokemon[1])].ability = splitAbility[1];
         }
         break;
 
@@ -405,6 +405,9 @@ function avatarCheck(avatar) {
     case "37":
       return "beauty-gen4dp";
 
+    case "102":
+      return "lyra";
+
     case "159":
       return "sabrina";
 
@@ -416,6 +419,9 @@ function avatarCheck(avatar) {
 
     case "223":
       return "iris";
+
+    case "265":
+      return "rosa";
 
     case "266":
       return "nate";
