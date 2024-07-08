@@ -198,7 +198,7 @@ function splitLog(log) {
         break;
 
       case "-terastallize":
-        PokemonData[splitLine[2]].tera = splitLine[3];
+        PokemonData[getPokemonName(splitLine[2])].tera = splitLine[3];
         break;
 
       case "-ability":
@@ -633,7 +633,7 @@ function pokemon() {
     koCol.appendChild(document.createElement("hr"))
 
     for (const ko of pkmn.kos) {
-      let koPkmn = PokemonData[ko].species.split(", ")[0];
+      let koPkmn = PokemonData[getPokemonName(ko)].species.split(", ")[0];
       let koImg = document.createElement("img");
       koImg.src = pokemonJSON[koPkmn.toUpperCase()].icon;
       koImg.className = "ko-image";

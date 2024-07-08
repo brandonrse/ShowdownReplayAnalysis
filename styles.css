@@ -72,6 +72,7 @@ body {
   padding: 5px;
   font-weight: bold;
   font-style: italic;
+  width: max-content;
 }
 
 .ability {
