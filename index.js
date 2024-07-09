@@ -131,7 +131,7 @@ function splitLog(log) {
 
       case "switch":
       case "drag":
-        if (!Object.keys(PokemonData).includes(splitLine[2])) {
+        if (!Object.keys(PokemonData).includes(getPokemonName(splitLine[2]))) {
           if (!splitLine[3].includes("-Mega")) {
             createPokemonData(splitLine[2], splitLine[4], splitLine[3]);
           }
@@ -176,12 +176,14 @@ function splitLog(log) {
           let count = 1;
           let defeatedBy = splitLog[i-count].split("|");
 
+          let faintedNickname = getPokemonName(splitLine[2]);
+
           if (splitLine[4] == "[from] Stealth Rock") {
             if (splitLine[2].startsWith("p1")) { 
-              PokemonData[stealthRockSetterP2].kos.add(splitLine[2]);
+              PokemonData[stealthRockSetterP2].kos.add(faintedNickname);
             }
             else if (splitLine[2].startsWith("p2")) {
-              PokemonData[stealthRockSetterP1].kos.add(splitLine[2]);
+              PokemonData[stealthRockSetterP1].kos.add(faintedNickname);
             }
           }
           else if (splitLine[4] == "[from] item: Life Orb") {
@@ -192,7 +194,8 @@ function splitLog(log) {
               count += 1;
               defeatedBy = splitLog[i-count].split("|");
             }
-            PokemonData[getPokemonName(defeatedBy[2])].kos.add(getPokemonName(splitLine[2]));
+            let defeatedByNickname = getPokemonName(defeatedBy[2])
+            PokemonData[defeatedByNickname].kos.add(faintedNickname);
           }
         }
         break;
