@@ -436,7 +436,7 @@ function avatarCheck(avatar) {
       return "dawn";
 
     default:
-      return "lucas";
+      return avatar;
   }
 }
 
