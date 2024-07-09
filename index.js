@@ -402,6 +402,9 @@ function profiles() {
 
 function avatarCheck(avatar) {
   switch (avatar) {
+    case "1":
+      return "lucas"
+
     case "2":
       return "dawn";
 
@@ -433,7 +436,7 @@ function avatarCheck(avatar) {
       return "dawn";
 
     default:
-      return avatar;
+      return "lucas";
   }
 }
 
