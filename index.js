@@ -140,13 +140,18 @@ function splitLog(log) {
 
       case "move":
         let pokemonNicknameMove = getPokemonName(splitLine[2]);
-        PokemonData[pokemonNicknameMove].moves.add(splitLine[3]);
-        if (splitLine[3] == "Stealth Rock") {
-          if (pokemonNicknameMove.startsWith("p1")) {
-            stealthRockSetterP1 = pokemonNicknameMove;
-          }
-          else if (pokemonNicknameMove.startsWith("p2")) {
-            stealthRockSetterP2 = pokemonNicknameMove;
+        if (PokemonData[getPokemonName(splitLine[2])].species == "Ditto") {
+          PokemonData[pokemonNicknameMove].moves.add("Transform");
+        }
+        else {
+          PokemonData[pokemonNicknameMove].moves.add(splitLine[3]);
+          if (splitLine[3] == "Stealth Rock") {
+            if (pokemonNicknameMove.startsWith("p1")) {
+              stealthRockSetterP1 = pokemonNicknameMove;
+            }
+            else if (pokemonNicknameMove.startsWith("p2")) {
+              stealthRockSetterP2 = pokemonNicknameMove;
+            }
           }
         }
         break;
