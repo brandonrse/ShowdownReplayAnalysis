@@ -140,7 +140,7 @@ function splitLog(log) {
 
       case "move":
         let pokemonNicknameMove = getPokemonName(splitLine[2]);
-        if (PokemonData[getPokemonName(splitLine[2])].species == "Ditto") {
+        if (PokemonData[pokemonNicknameMove].species.startsWith("Ditto")) {
           PokemonData[pokemonNicknameMove].moves.add("Transform");
         }
         else {
