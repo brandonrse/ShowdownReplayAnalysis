@@ -281,6 +281,11 @@ function splitLog(log) {
         }
         break;
 
+      case "-transform":
+        if (splitLine[4].startsWith("[from] ability:")) {
+          PokemonData[getPokemonName(splitLine[2])].ability = splitLine[4].split("[from] ability:")[1];
+        }
+
       default:
         break;
     }
