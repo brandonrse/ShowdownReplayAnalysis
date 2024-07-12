@@ -166,8 +166,14 @@ function splitLog(log) {
             PokemonData[pokemonNicknameDmg].item = splitLine[4].split("[from] item: ")[1]
           }
         }
+        if (splitLine.length == 6) {
+          // Rocky Helmet
+          let itemUser = getPokemonName(splitLine[5].substring(5));
+          if (splitLine[4].startsWith("[from] item: ") && PokemonData[itemUser].item == "") {
+            PokemonData[itemUser].item = splitLine[4].split("[from] item: ")[1]
+          }
+        }
 
-        //TODO: Rocky Helmet
         //TODO: Poison
         //TODO: Flame Orb
         //TODO: Toxic Orb (no credit)
@@ -193,6 +199,10 @@ function splitLog(log) {
           }
           else if (splitLine[4] == "[from] item: Life Orb") {
             // Nothing happens
+          } 
+          else if (splitLine[4] == "[from] item: Rocky Helmet") {
+            let victor = getPokemonName(splitLine[5].substring(5));
+            PokemonData[victor].kos.add(faintedNickname);
           } 
           else {
             while(defeatedBy[1] !== "move") {
