@@ -430,6 +430,9 @@ function avatarCheck(avatar) {
 
     case "37":
       return "beauty-gen4dp";
+    
+    case "101":
+      return "ethan";
 
     case "102":
       return "lyra";
@@ -992,6 +995,63 @@ function oneAbilityCheck(species, tier) {
     case "Hypno":
     case "Hitmonlee":
     case "Hitmonchan":
+    case "Tangela":
+    case "Kangaskhan":
+    case "Horsea":
+    case "Seadra":
+    case "Mr. Mime":
+    case "Scyther":
+    case "Jynx":
+    case "Pinsir":
+    case "Tauros":
+    case "Eevee":
+    case "Porygon":
+    case "Hoppip":
+    case "Skiploom":
+    case "Jumpluff":
+    case "Sunkern":
+    case "Sunflora":
+    case "Murkrow":
+    case "Granbull":
+    case "Shuckle":
+    case "Teddiursa":
+    case "Ursaring":
+    case "Swinub":
+    case "Piloswine":
+    case "Remoraid":
+    case "Octillery":
+    case "Kingdra":
+    case "Stantler":
+    case "Smeargle":
+    case "Miltank":
+    case "Porygon2":
+    case "Tyrogue":
+    case "Hitmontop":
+    case "Smoochum":
+    case "Poochyena":
+    case "Mightyena":
+    case "Zigzagoon":
+    case "Linoone":
+    case "Shroomish":
+    case "Breloom":
+    case "Skitty":
+    case "Delcatty":
+    case "Sableye":
+    case "Illumise":
+    case "Numel":
+    case "Camerupt":
+    case "Spinda":
+    case "Barboach":
+    case "Whiscash":
+    case "Shuppet":
+    case "Banette":
+    case "Tropius":
+    case "Absol":
+    case "Snorunt":
+    case "Glalie":
+    case "Spheal":
+    case "Sealeo":
+    case "Walrein":
       if (tier.startsWith("[Gen 3]")) {
         ability = pokemonJSON[species.toUpperCase()].abilities[0];
       } else {
@@ -1002,16 +1062,37 @@ function oneAbilityCheck(species, tier) {
     case "Igglybuff":
     case "Jigglypuff":
     case "Wigglytuff":
+    case "Wingull":
+    case "Pelipper":
+    case "Torkoal":
+    case "Gallade":
+    case "Feebas":
+    case "Milotic":
+    case "Gallade":
+      if (tier.startsWith("[Gen 3]") || tier.startsWith("[Gen 4]")) {
+        ability = pokemonJSON[species.toUpperCase()].abilities[0];
+      } else {
+        ability = "??????"
+      }
+      break;
+
+    case "Plusle":
+    case "Minun":
+    case "Kecleon":
+    case "Duskull":
+    case "Dusclops":
+    case "Dusknoir":
+    case "Kecleon":
       if (tier.startsWith("[Gen 3]") || tier.startsWith("[Gen 4]") || tier.startsWith("[Gen 5]")) {
         ability = pokemonJSON[species.toUpperCase()].abilities[0];
       } else {
         ability = "??????"
       }
       break;
-  
+
     default:
       if (Object.hasOwn(pokemonJSON[species.toUpperCase()], "abilities")) {
-        if (pokemonJSON[species.toUpperCase()].abilities.length == 1 && pokemonJSON[species.toUpperCase()].hiddenAbility.length == 0) {
+        if (pokemonJSON[species.toUpperCase()].abilities.length == 1 && (pokemonJSON[species.toUpperCase()].hiddenAbility.length == 0 || tier.startsWith("[Gen 3]") || tier.startsWith("[Gen 4]"))) {
           ability = pokemonJSON[species.toUpperCase()].abilities[0];
         }
         else {

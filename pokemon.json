@@ -1051,56 +1051,78 @@
   "HITMONLEE": {
     "name":"Hitmonlee",
     "types":["Fighting"],
+    "abilities":["Limber", "Reckless"],
+    "hiddenAbility":["Unburden"],
     "icon":"images/pokemon/106 HOME (Ver. 3.2.1).png"
   },
   "HITMONCHAN": {
     "name":"Hitmonchan",
     "types":["Fighting"],
+    "abilities":["Keen Eye", "Iron Fist"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/107 HOME (Ver. 3.2.1).png"
   },
   "LICKITUNG": {
     "name":"Lickitung",
     "types":["Normal"],
+    "abilities":["Own Tempo", "Oblivious"],
+    "hiddenAbility":["Cloud Nine"],
     "icon":"images/pokemon/108 HOME.png"
   },
   "KOFFING": {
     "name":"Koffing",
     "types":["Poison"],
+    "abilities":["Levitate", "Neutralizing Gas"],
+    "hiddenAbility":["Stench"],
     "icon":"images/pokemon/109 HOME.png"
   },
   "WEEZING": {
     "name":"Weezing",
     "types":["Poison"],
+    "abilities":["Levitate", "Neutralizing Gas"],
+    "hiddenAbility":["Stench"],
     "icon":"images/pokemon/110 HOME (Ver. 3.0.0).png"
   },
   "WEEZING-GALAR": {
     "name":"Weezing",
     "types":["Poison","Fairy"],
+    "abilities":["Levitate", "Neutralizing Gas"],
+    "hiddenAbility":["Misty Surge"],
     "icon":"images/pokemon/110G HOME.png"
   },
   "RHYHORN": {
     "name":"Rhyhorn",
     "types":["Ground","Rock"],
+    "abilities":["Lightning Rod", "Rock Head"],
+    "hiddenAbility":["Reckless"],
     "icon":"images/pokemon/111 HOME (Ver. 3.2.1).png"
   },
   "RHYDON": {
     "name":"Rhydon",
     "types":["Ground","Rock"],
+    "abilities":["Lightning Rod", "Rock Head"],
+    "hiddenAbility":["Reckless"],
     "icon":"images/pokemon/112 HOME (Ver. 3.2.1).png"
   },
   "CHANSEY": {
     "name":"Chansey",
     "types":["Normal"],
+    "abilities":["Natural Cure", "Serene Grace"],
+    "hiddenAbility":["Healer"],
     "icon":"images/pokemon/113 HOME.png"
   },
   "TANGELA": {
     "name":"Tangela",
     "types":["Grass"],
+    "abilities":["Chlorophyll", "Leaf Guard"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/114 HOME.png"
   },
   "KANGASKHAN": {
     "name":"Kangaskhan",
     "types":["Normal"],
+    "abilities":["Early Bird", "Scrappy"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/115 HOME.png"
   },
   "KANGASKHAN-MEGA": {
@@ -1113,66 +1135,92 @@
   "HORSEA": {
     "name":"Horsea",
     "types":["Water"],
+    "abilities":["Swift Swim", "Sniper"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/116 HOME (Ver. 3.2.1).png"
   },
   "SEADRA": {
     "name":"Seadra",
     "types":["Water"],
+    "abilities":["Poison Point", "Sniper"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/117 HOME (Ver. 3.2.1).png"
   },
   "GOLDEEN": {
     "name":"Goldeen",
     "types":["Water"],
+    "abilities":["Swift Swim", "Water Veil"],
+    "hiddenAbility":["Lightning Rod"],
     "icon":"images/pokemon/118 HOME.png"
   },
   "SEAKING": {
     "name":"Seaking",
     "types":["Water"],
+    "abilities":["Swift Swim", "Water Veil"],
+    "hiddenAbility":["Lightning Rod"],
     "icon":"images/pokemon/119 HOME.png"
   },
   "STARYU": {
     "name":"Staryu",
     "types":["Water"],
+    "abilities":["Illuminate", "Natural Cure"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/120 HOME.png"
   },
   "STARMIE": {
     "name":"Starmie",
     "types":["Water","Psychic"],
+    "abilities":["Illuminate", "Natural Cure"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/121 HOME.png"
   },
   "MR. MIME": {
     "name":"Mr. Mime",
     "types":["Psychic","Fairy"],
+    "abilities":["Soundproof", "Filter"],
+    "hiddenAbility":["Technician"],
     "icon":"images/pokemon/122 HOME.png"
   },
   "MR. MIME-GALAR": {
     "name":"Mr. Mime",
     "types":["Ice","Psychic"],
+    "abilities":["Vital Spirit", "Screen Cleaner"],
+    "hiddenAbility":["Ice Body"],
     "icon":"images/pokemon/122G HOME.png"
   },
   "SCYTHER": {
     "name":"Scyther",
     "types":["Bug","Flying"],
+    "abilities":["Swarm", "Technician"],
+    "hiddenAbility":["Steadfast"],
     "icon":"images/pokemon/123 HOME.png"
   },
   "JYNX": {
     "name":"Jynx",
     "types":["Ice","Psychic"],
+    "abilities":["Oblivious", "Forewarn"],
+    "hiddenAbility":["Dry Skin"],
     "icon":"images/pokemon/124 HOME.png"
   },
   "ELECTABUZZ": {
     "name":"Electabuzz",
     "types":["Electric"],
+    "abilities":["Static"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/125 HOME (Ver. 3.2.1).png"
   },
   "MAGMAR": {
     "name":"Magmar",
     "types":["Fire"],
+    "abilities":["Flame Body"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/126 HOME (Ver. 3.2.1).png"
   },
   "PINSIR": {
     "name":"Pinsir",
     "types":["Bug"],
+    "abilities":["Hyper Cutter", "Mold Breaker"],
+    "hiddenAbility":["Moxie"],
     "icon":"images/pokemon/127 HOME.png"
   },
   "PINSIR-MEGA": {
@@ -1185,26 +1233,36 @@
   "TAUROS": {
     "name":"Tauros",
     "types":["Normal"],
+    "abilities":["Intimidate", "Anger Point"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/128 HOME.png"
   },
   "TAUROS-PALDEA-COMBAT": {
     "name":"Tauros",
     "types":["Fighting"],
+    "abilities":["Intimidate", "Anger Point"],
+    "hiddenAbility":["Cud Chew"],
     "icon":"images/pokemon/128P HOME.png"
   },
   "TAUROS-PALDEA-AQUA": {
     "name":"Voltorb",
     "types":["Fighting","Water"],
+    "abilities":["Intimidate", "Anger Point"],
+    "hiddenAbility":["Cud Chew"],
     "icon":"images/pokemon/128PA HOME.png"
   },
   "TAUROS-PALDEA-BLAZE": {
     "name":"Tauros",
     "types":["Fighting","Fire"],
+    "abilities":["Intimidate", "Anger Point"],
+    "hiddenAbility":["Cud Chew"],
     "icon":"images/pokemon/128PB HOME.png"
   },
   "MAGIKARP": {
     "name":"Magikarp",
     "types":["Water"],
+    "abilities":["Swift Swim"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/129 HOME.png"
   },
   "GYARADOS": {
@@ -1224,61 +1282,85 @@
   "LAPRAS": {
     "name":"Lapras",
     "types":["Water","Ice"],
+    "abilities":["Water Absorb", "Shell Armor"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/131 HOME (Ver. 3.2.1).png"
   },
   "DITTO": {
     "name":"Ditto",
     "types":["Normal"],
+    "abilities":["Limber"],
+    "hiddenAbility":["Imposter"],
     "icon":"images/pokemon/132 HOME.png"
   },
   "EEVEE": {
     "name":"Eevee",
     "types":["Normal"],
+    "abilities":["Run Away", "Adaptability"],
+    "hiddenAbility":["Anticipation"],
     "icon":"images/pokemon/133 HOME.png"
   },
   "VAPOREON": {
     "name":"Vaporeon",
     "types":["Water"],
+    "abilities":["Water Absorb"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/134 HOME.png"
   },
   "JOLTEON": {
     "name":"Jolteon",
     "types":["Electric"],
+    "abilities":["Volt Absorb"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/135 HOME.png"
   },
   "FLAREON": {
     "name":"Flareon",
     "types":["Fire"],
+    "abilities":["Flash Fire"],
+    "hiddenAbility":["Guts"],
     "icon":"images/pokemon/136 HOME.png"
   },
   "PORYGON": {
     "name":"Porygon",
     "types":["Normal"],
+    "abilities":["Trace", "Download"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/137 HOME (Ver. 3.2.1).png"
   },
   "OMANYTE": {
     "name":"Omanyte",
     "types":["Rock","Water"],
+    "abilities":["Swift Swim", "Shell Armor"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/138 HOME.png"
   },
   "OMASTAR": {
     "name":"Omastar",
     "types":["Rock","Water"],
+    "abilities":["Swift Swim", "Shell Armor"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/139 HOME.png"
   },
   "KABUTO": {
     "name":"Kabuto",
     "types":["Rock","Water"],
+    "abilities":["Swift Swim", "Battle Armor"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/140 HOME.png"
   },
   "KABUTOPS": {
     "name":"Kabutops",
     "types":["Rock","Water"],
+    "abilities":["Swift Swim", "Battle Armor"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/141 HOME.png"
   },
   "AERODACTYL": {
     "name":"Aerodactyl",
     "types":["Rock","Flying"],
+    "abilities":["Rock Head", "Pressure"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/142 HOME.png"
   },
   "AERODACTYL-MEGA": {
@@ -1291,11 +1373,15 @@
   "SNORLAX": {
     "name":"Snorlax",
     "types":["Normal"],
+    "abilities":["Immunity", "Thick Fat"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/143 HOME.png"
   },
   "ARTICUNO": {
     "name":"Articuno",
     "types":["Ice","Flying"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Snow Cloak"],
     "icon":"images/pokemon/144 HOME.png"
   },
   "ARTICUNO-GALAR": {
@@ -1322,6 +1408,8 @@
   "MOLTRES": {
     "name":"Moltres",
     "types":["Fire","Flying"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Flame Body"],
     "icon":"images/pokemon/146 HOME.png"
   },
   "MOLTRES-GALAR": {
@@ -1334,21 +1422,29 @@
   "DRATINI": {
     "name":"Dratini",
     "types":["Dragon"],
+    "abilities":["Shed Skin"],
+    "hiddenAbility":["Marvel Scale"],
     "icon":"images/pokemon/147 HOME.png"
   },
   "DRAGONAIR": {
     "name":"Dragonair",
     "types":["Dragon"],
+    "abilities":["Shed Skin"],
+    "hiddenAbility":["Marvel Scale"],
     "icon":"images/pokemon/148 HOME.png"
   },
   "DRAGONITE": {
     "name":"Dragonite",
     "types":["Dragon","Flying"],
+    "abilities":["Inner Focus"],
+    "hiddenAbility":["Multiscale"],
     "icon":"images/pokemon/149 HOME.png"
   },
   "MEWTWO": {
     "name":"Mewtwo",
     "types":["Psychic"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/150 HOME.png"
   },
   "MEWTWO-MEGA-X": {
@@ -1375,111 +1471,155 @@
   "CHIKORITA": {
     "name":"Chikorita",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Leaf Guard"],
     "icon":"images/pokemon/152 HOME (Ver. 3.2.1).png"
   },
   "BAYLEEF": {
     "name":"Bayleef",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Leaf Guard"],
     "icon":"images/pokemon/153 HOME (Ver. 3.2.1).png"
   },
   "MEGANIUM": {
     "name":"Meganium",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Leaf Guard"],
     "icon":"images/pokemon/154 HOME (Ver. 3.2.1).png"
   },
   "CYNDAQUIL": {
     "name":"Cyndaquil",
     "types":["Fire"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Flash Fire"],
     "icon":"images/pokemon/155 HOME.png"
   },
   "QUILAVA": {
     "name":"Quilava",
     "types":["Fire"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Flash Fire"],
     "icon":"images/pokemon/156 HOME.png"
   },
   "TYPHLOSION": {
     "name":"Typhlosion",
     "types":["Fire"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Flash Fire"],
     "icon":"images/pokemon/157 HOME.png"
   },
   "TYPHLOSION-HISUI": {
     "name":"Typhlosion",
     "types":["Fire","Ghost"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/157H HOME.png"
   },
   "TOTODILE": {
     "name":"Totodile",
     "types":["Water"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/158 HOME.png"
   },
   "CROCONAW": {
     "name":"Croconaw",
     "types":["Water"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/159 HOME (Ver. 3.2.1).png"
   },
   "FERALIGATR": {
     "name":"Feraligatr",
     "types":["Water"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/160 HOME (Ver. 3.2.1).png"
   },
   "SENTRET": {
     "name":"Sentret",
     "types":["Normal"],
+    "abilities":["Run Away", "Keen Eye"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/161 HOME.png"
   },
   "FURRET": {
     "name":"Furret",
     "types":["Normal"],
+    "abilities":["Run Away", "Keen Eye"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/162 HOME.png"
   },
   "HOOTHOOT": {
     "name":"Hoothoot",
     "types":["Normal","Flying"],
+    "abilities":["Insomnia", "Keen Eye"],
+    "hiddenAbility":["Tinted Lens"],
     "icon":"images/pokemon/163 HOME.png"
   },
   "NOCTOWL": {
     "name":"Noctowl",
     "types":["Normal","Flying"],
+    "abilities":["Insomnia", "Keen Eye"],
+    "hiddenAbility":["Tinted Lens"],
     "icon":"images/pokemon/164 HOME.png"
   },
   "LEDYBA": {
     "name":"Ledyba",
     "types":["Bug","Flying"],
+    "abilities":["Swarm", "Early Bird"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/165 HOME.png"
   },
   "LEDIAN": {
     "name":"Ledian",
     "types":["Bug","Flying"],
+    "abilities":["Swarm", "Early Bird"],
+    "hiddenAbility":["Iron Fist"],
     "icon":"images/pokemon/166 HOME.png"
   },
   "SPINARAK": {
     "name":"Spinarak",
     "types":["Bug","Poison"],
+    "abilities":["Swarm", "Insomnia"],
+    "hiddenAbility":["Sniper"],
     "icon":"images/pokemon/167 HOME.png"
   },
   "ARIADOS": {
     "name":"Ariados",
     "types":["Bug","Poison"],
+    "abilities":["Swarm", "Insomnia"],
+    "hiddenAbility":["Sniper"],
     "icon":"images/pokemon/168 HOME.png"
   },
   "CROBAT": {
     "name":"Crobat",
     "types":["Poison","Flying"],
+    "abilities":["Inner Focus"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/169 HOME.png"
   },
   "CHINCHOU": {
     "name":"Chinchou",
     "types":["Water","Electric"],
+    "abilities":["Volt Absorb", "Illuminate"],
+    "hiddenAbility":["Water Absorb"],
     "icon":"images/pokemon/170 HOME (Ver. 3.2.1).png"
   },
   "LANTURN": {
     "name":"Lanturn",
     "types":["Water","Electric"],
+    "abilities":["Volt Absorb", "Illuminate"],
+    "hiddenAbility":["Water Absorb"],
     "icon":"images/pokemon/171 HOME (Ver. 3.2.1).png"
   },
   "PICHU": {
     "name":"Pichu",
     "types":["Electric"],
+    "abilities":["Static"],
+    "hiddenAbility":["Lightning Rod"],
     "icon":"images/pokemon/172 HOME.png"
   },
   "PICHU-SPIKY-EARED": {
@@ -1492,153 +1632,211 @@
   "CLEFFA": {
     "name":"Cleffa",
     "types":["Fairy"],
+    "abilities":["Cute Charm", "Magic Guard"],
+    "hiddenAbility":["Friend Guard"],
     "icon":"images/pokemon/173 HOME.png"
   },
   "IGGLYBUFF": {
     "name":"Igglybuff",
     "types":["Normal", "Fairy"],
+    "abilities":["Cute Charm", "Competitive"],
+    "hiddenAbility":["Friend Guard"],
     "icon":"images/pokemon/174 HOME.png"
   },
   "TOGEPI": {
     "name":"Togepi",
     "types":["Fairy"],
+    "abilities":["Hustle", "Serene Grace"],
+    "hiddenAbility":["Super Luck"],
     "icon":"images/pokemon/175 HOME.png"
   },
   "TOGETIC": {
     "name":"Togetic",
     "types":["Fairy","Flying"],
+    "abilities":["Hustle", "Serene Grace"],
+    "hiddenAbility":["Super Luck"],
     "icon":"images/pokemon/176 HOME.png"
   },
   "NATU": {
     "name":"Natu",
     "types":["Psychic","Flying"],
+    "abilities":["Synchronize", "Early Bird"],
+    "hiddenAbility":["Magic Bounce"],
     "icon":"images/pokemon/177 HOME.png"
   },
   "XATU": {
     "name":"Xatu",
     "types":["Psychic","Flying"],
+    "abilities":["Synchronize", "Early Bird"],
+    "hiddenAbility":["Magic Bounce"],
     "icon":"images/pokemon/178 HOME.png"
   },
   "MAREEP": {
     "name":"Mareep",
     "types":["Electric"],
+    "abilities":["Static"],
+    "hiddenAbility":["Plus"],
     "icon":"images/pokemon/179 HOME.png"
   },
   "FLAAFFY": {
     "name":"Flaaffy",
     "types":["Electric"],
+    "abilities":["Static"],
+    "hiddenAbility":["Plus"],
     "icon":"images/pokemon/180 HOME.png"
   },
   "AMPHAROS": {
     "name":"Ampharos",
     "types":["Electric"],
-    "abilities":["Mold Breaker"],
-    "hiddenAbility":[],
+    "abilities":["Static"],
+    "hiddenAbility":["Plus"],
     "icon":"images/pokemon/181 HOME.png"
   },
   "AMPHAROS-MEGA": {
     "name":"Ampharos",
     "types":["Electric"],
+    "abilities":["Mold Breaker"],
+    "hiddenAbility":[],
     "icon":"images/pokemon/181M HOME.png"
   },
   "BELLOSSOM": {
     "name":"Bellossom",
     "types":["Grass"],
+    "abilities":["Chlorophyll"],
+    "hiddenAbility":["Healer"],
     "icon":"images/pokemon/182 HOME.png"
   },
   "MARILL": {
     "name":"Marill",
     "types":["Water","Fairy"],
+    "abilities":["Thick Fat", "Huge Power"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/183 HOME.png"
   },
   "AZUMARILL": {
     "name":"Azumarill",
     "types":["Water","Fairy"],
+    "abilities":["Thick Fat", "Huge Power"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/184 HOME.png"
   },
   "SUDOWOODO": {
     "name":"Sudowoodo",
     "types":["Rock"],
+    "abilities":["Sturdy", "Rock Head"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/185 HOME.png"
   },
   "POLITOED": {
     "name":"Politoed",
     "types":["Water"],
+    "abilities":["Water Absorb", "Damp"],
+    "hiddenAbility":["Drizzle"],
     "icon":"images/pokemon/186 HOME.png"
   },
   "HOPPIP": {
     "name":"Hoppip",
     "types":["Grass","Flying"],
+    "abilities":["Chlorophyll", "Leaf Guard"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/187 HOME.png"
   },
   "SKIPLOOM": {
     "name":"Skiploom",
     "types":["Grass","Flying"],
+    "abilities":["Chlorophyll", "Leaf Guard"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/188 HOME.png"
   },
   "JUMPLUFF": {
     "name":"Jumpluff",
     "types":["Grass","Flying"],
+    "abilities":["Chlorophyll", "Leaf Guard"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/189 HOME.png"
   },
   "AIPOM": {
     "name":"Aipom",
     "types":["Normal"],
+    "abilities":["Run Away", "Pickup"],
+    "hiddenAbility":["Skill Link"],
     "icon":"images/pokemon/190 HOME.png"
   },
   "SUNKERN": {
     "name":"Sunkern",
     "types":["Grass"],
+    "abilities":["Chlorophyll", "Solar Power"],
+    "hiddenAbility":["Early Bird"],
     "icon":"images/pokemon/191 HOME.png"
   },
   "SUNFLORA": {
     "name":"Sunflora",
     "types":["Grass"],
+    "abilities":["Chlorophyll", "Solar Power"],
+    "hiddenAbility":["Early Bird"],
     "icon":"images/pokemon/192 HOME.png"
   },
   "YANMA": {
     "name":"Yanma",
     "types":["Bug","Flying"],
+    "abilities":["Speed Boost", "Compound Eyes"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/193 HOME.png"
   },
   "WOOPER": {
     "name":"Wooper",
     "types":["Water","Ground"],
+    "abilities":["Damp", "Water Absorb"],
+    "hiddenAbility":["Unaware"],
     "icon":"images/pokemon/194 HOME.png"
   },
   "WOOPER-PALDEA": {
     "name":"Wooper",
     "types":["Poison","Ground"],
+    "abilities":["Poison Point", "Water Absorb"],
+    "hiddenAbility":["Unaware"],
     "icon":"images/pokemon/194P HOME.png"
   },
   "QUAGSIRE": {
     "name":"Quagsire",
     "types":["Water","Ground"],
+    "abilities":["Damp", "Water Absorb"],
+    "hiddenAbility":["Unaware"],
     "icon":"images/pokemon/195 HOME.png"
   },
   "ESPEON": {
     "name":"Espeon",
     "types":["Psychic"],
+    "abilities":["Synchronize"],
+    "hiddenAbility":["Magic Bounce"],
     "icon":"images/pokemon/196 HOME.png"
   },
   "UMBREON": {
     "name":"Umbreon",
     "types":["Dark"],
+    "abilities":["Synchronize"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/197 HOME.png"
   },
   "MURKROW": {
     "name":"Murkrow",
     "types":["Dark","Flying"],
+    "abilities":["Insomnia", "Super Luck"],
+    "hiddenAbility":["Prankster"],
     "icon":"images/pokemon/198 HOME.png"
   },
   "SLOWKING": {
     "name":"Slowking",
     "types":["Water","Psychic"],
+    "abilities":["Oblivious", "Own Tempo"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/199 HOME.png"
   },
   "SLOWKING-GALAR": {
     "name":"Slowking",
     "types":["Poison","Psychic"],
+    "abilities":["Curious Medicine", "Own Tempo"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/199G HOME.png"
   },
   "MISDREAVUS": {
@@ -1847,36 +2045,50 @@
   "WOBBUFFET": {
     "name":"Wobbuffet",
     "types":["Psychic"],
+    "abilities":["Shadow Tag"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/202 HOME.png"
   },
   "GIRAFARIG": {
     "name":"Girafarig",
     "types":["Normal","Psychic"],
+    "abilities":["Inner Focus", "Early Bird"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/203 HOME.png"
   },
   "PINECO": {
     "name":"Pineco",
     "types":["Bug"],
+    "abilities":["Sturdy"],
+    "hiddenAbility":["Overcoat"],
     "icon":"images/pokemon/204 HOME.png"
   },
   "FORRETRESS": {
     "name":"Forretress",
     "types":["Bug","Steel"],
+    "abilities":["Sturdy"],
+    "hiddenAbility":["Overcoat"],
     "icon":"images/pokemon/205 HOME.png"
   },
   "DUNSPARCE": {
     "name":"Dunsparce",
     "types":["Normal"],
+    "abilities":["Serene Grace", "Run Away"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/206 HOME.png"
   },
   "GLIGAR": {
     "name":"Gligar",
     "types":["Ground","Flying"],
+    "abilities":["Hyper Cutter", "Sand Veil"],
+    "hiddenAbility":["Immunity"],
     "icon":"images/pokemon/207 HOME.png"
   },
   "STEELIX": {
     "name":"Steelix",
     "types":["Steel","Ground"],
+    "abilities":["Rock Head", "Sturdy"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/208 HOME.png"
   },
   "STEELIX-MEGA": {
@@ -1889,28 +2101,36 @@
   "SNUBBULL": {
     "name":"Snubbull",
     "types":["Fairy"],
+    "abilities":["Intimidate", "Run Away"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/209 HOME.png"
   },
   "GRANBULL": {
     "name":"Granbull",
     "types":["Fairy"],
+    "abilities":["Intimidate", "Quick Feet"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/210 HOME.png"
   },
   "QWILFISH": {
     "name":"Qwilfish",
     "types":["Water","Poison"],
+    "abilities":["Poison Point", "Swift Swim"],
+    "hiddenAbility":["Intimidate"],
     "icon":"images/pokemon/211 HOME.png"
   },
   "QWILFISH-HISUI": {
     "name":"Qwilfish",
     "types":["Dark","Poison"],
+    "abilities":["Poison Point", "Swift Swim"],
+    "hiddenAbility":["Intimidate"],
     "icon":"images/pokemon/211H HOME.png"
   },
   "SCIZOR": {
     "name":"Scizor",
     "types":["Bug","Steel"],
-    "abilities":["Static"],
-    "hiddenAbility":[],
+    "abilities":["Swarm", "Technician"],
+    "hiddenAbility":["Light Metal"],
     "icon":"images/pokemon/212 HOME.png"
   },
   "SCIZOR-MEGA": {
@@ -1923,11 +2143,15 @@
   "SHUCKLE": {
     "name":"Shuckle",
     "types":["Bug","Rock"],
+    "abilities":["Sturdy", "Gluttony"],
+    "hiddenAbility":["Contrary"],
     "icon":"images/pokemon/213 HOME.png"
   },
   "HERACROSS": {
     "name":"Heracross",
     "types":["Bug","Fighting"],
+    "abilities":["Swarm", "Guts"],
+    "hiddenAbility":["Moxie"],
     "icon":"images/pokemon/214 HOME.png"
   },
   "HERACROSS-MEGA": {
@@ -1940,86 +2164,120 @@
   "SNEASEL": {
     "name":"Sneasel",
     "types":["Dark","Ice"],
+    "abilities":["Inner Focus", "Keen Eye"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/215 HOME.png"
   },
   "SNEASEL-HISUI": {
     "name":"Sneasel",
     "types":["Fighting","Poison"],
+    "abilities":["Inner Focus", "Keen Eye"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/215H HOME.png"
   },
   "TEDDIURSA": {
     "name":"Teddiursa",
     "types":["Normal"],
+    "abilities":["Pickup", "Quick Feet"],
+    "hiddenAbility":["Honey Gather"],
     "icon":"images/pokemon/216 HOME.png"
   },
   "URSARING": {
     "name":"Ursaring",
     "types":["Normal"],
+    "abilities":["Guts", "Quick Feet"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/217 HOME.png"
   },
   "SLUGMA": {
     "name":"Slugma",
     "types":["Fire"],
+    "abilities":["Magma Armor", "Flame Body"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/218 HOME (Ver. 3.0.0).png"
   },
   "MAGCARGO": {
     "name":"Magcargo",
     "types":["Fire","Rock"],
+    "abilities":["Magma Armor", "Flame Body"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/219 HOME (Ver. 3.0.0).png"
   },
   "SWINUB": {
     "name":"Swinub",
     "types":["Ice", "Ground"],
+    "abilities":["Oblivious", "Snow Cloak"],
+    "hiddenAbility":["Thick Fat"],
     "icon":"images/pokemon/220 HOME (Ver. 3.0.0).png"
   },
   "PILOSWINE": {
     "name":"Piloswine",
     "types":["Ice","Ground"],
+    "abilities":["Oblivious", "Snow Cloak"],
+    "hiddenAbility":["Thick Fat"],
     "icon":"images/pokemon/221 HOME (Ver. 3.0.0).png"
   },
   "CORSOLA": {
     "name":"Corsola",
     "types":["Water","Rock"],
+    "abilities":["Hustle", "Natural Cure"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/222 HOME.png"
   },
   "CORSOLA-GALAR": {
     "name":"Corsola",
     "types":["Ghost"],
+    "abilities":["Weak Armor"],
+    "hiddenAbility":["Cursed Body"],
     "icon":"images/pokemon/222G HOME.png"
   },
   "REMORAID": {
     "name":"Remoraid",
     "types":["Water"],
+    "abilities":["Hustle", "Sniper"],
+    "hiddenAbility":["Moody"],
     "icon":"images/pokemon/223 HOME.png"
   },
   "OCTILLERY": {
     "name":"Octillery",
     "types":["Water"],
+    "abilities":["Hustle", "Sniper"],
+    "hiddenAbility":["Moody"],
     "icon":"images/pokemon/224 HOME.png"
   },
   "DELIBIRD": {
     "name":"Delibird",
     "types":["Ice","Flying"],
+    "abilities":["Vital Spirit", "Hustle"],
+    "hiddenAbility":["Insomnia"],
     "icon":"images/pokemon/225 HOME.png"
   },
   "MANTINE": {
     "name":"Mantine",
     "types":["Water","Flying"],
+    "abilities":["Swift Swim", "Water Absorb"],
+    "hiddenAbility":["Water Veil"],
     "icon":"images/pokemon/226 HOME.png"
   },
   "SKARMORY": {
     "name":"Skarmory",
     "types":["Steel","Flying"],
+    "abilities":["Keen Eye", "Sturdy"],
+    "hiddenAbility":["Weak Armor"],
     "icon":"images/pokemon/227 HOME.png"
   },
   "HOUNDOUR": {
     "name":"Houndour",
     "types":["Dark","Fire"],
+    "abilities":["Early Bird", "Flash Fire"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/228 HOME.png"
   },
   "HOUNDOOM": {
     "name":"Houndoom",
     "types":["Dark","Fire"],
+    "abilities":["Early Bird", "Flash Fire"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/229 HOME.png"
   },
   "HOUNDOOM-MEGA": {
@@ -2032,86 +2290,120 @@
   "KINGDRA": {
     "name":"Kingdra",
     "types":["Water","Dragon"],
+    "abilities":["Swift Swim", "Sniper"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/230 HOME.png"
   },
   "PHANPY": {
     "name":"Phanpy",
     "types":["Ground"],
+    "abilities":["Pickup"],
+    "hiddenAbility":["Sand Veil"],
     "icon":"images/pokemon/231 HOME.png"
   },
   "DONPHAN": {
     "name":"Donphan",
     "types":["Ground"],
+    "abilities":["Sturdy"],
+    "hiddenAbility":["Sand Veil"],
     "icon":"images/pokemon/232 HOME.png"
   },
   "PORYGON2": {
     "name":"Porygon2",
     "types":["Normal"],
+    "abilities":["Trace", "Download"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/233 HOME (Ver. 3.2.1).png"
   },
   "STANTLER": {
     "name":"Stantler",
     "types":["Normal"],
+    "abilities":["Intimidate", "Frisk"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/234 HOME.png"
   },
   "SMEARGLE": {
     "name":"Smeargle",
     "types":["Normal"],
+    "abilities":["Own Tempo", "Technician"],
+    "hiddenAbility":["Moody"],
     "icon":"images/pokemon/235 HOME (Ver. 3.2.1).png"
   },
   "TYROGUE": {
     "name":"Tyrogue",
     "types":["Fighting"],
+    "abilities":["Guts", "Steadfast"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/236 HOME (Ver. 3.2.1).png"
   },
   "HITMONTOP": {
     "name":"Hitmontop",
     "types":["Fighting"],
+    "abilities":["Intimidate", "Technician"],
+    "hiddenAbility":["Steadfast"],
     "icon":"images/pokemon/237 HOME (Ver. 3.2.1).png"
   },
   "SMOOCHUM": {
     "name":"Smoochum",
     "types":["Ice","Psychic"],
+    "abilities":["Oblivious", "Forewarn"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/238 HOME.png"
   },
   "ELEKID": {
     "name":"Elekid",
     "types":["Electric"],
+    "abilities":["Static"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/239 HOME (Ver. 3.2.1).png"
   },
   "MAGBY": {
     "name":"Magby",
     "types":["Fire"],
+    "abilities":["Flame Body"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/240 HOME (Ver. 3.2.1).png"
   },
   "MILTANK": {
     "name":"Miltank",
     "types":["Normal"],
+    "abilities":["Thick Fat", "Scrappy"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/241 HOME.png"
   },
   "BLISSEY": {
     "name":"Blissey",
     "types":["Normal"],
+    "abilities":["Natural Cure", "Serene Grace"],
+    "hiddenAbility":["Healer"],
     "icon":"images/pokemon/242 HOME.png"
   },
   "RAIKOU": {
     "name":"Raikou",
     "types":["Electric"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/243 HOME (Ver. 3.2.1).png"
   },
   "ENTEI": {
     "name":"Entei",
     "types":["Fire"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/244 HOME (Ver. 3.2.1).png"
   },
   "SUICUNE": {
     "name":"Suicune",
     "types":["Water"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Inner Focus"],
     "icon":"images/pokemon/245 HOME (Ver. 3.2.1).png"
   },
   "LARVITAR": {
     "name":"Larvitar",
     "types":["Rock","Ground"],
+    "abilities":["Guts"],
+    "hiddenAbility":["Sand Veil"],
     "icon":"images/pokemon/246 HOME.png"
   },
   "PUPITAR": {
@@ -2138,11 +2430,15 @@
   "LUGIA": {
     "name":"Lugia",
     "types":["Psychic","Flying"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Multiscale"],
     "icon":"images/pokemon/249 HOME (Ver. 3.2.1).png"
   },
   "HO-OH": {
     "name":"Ho-Oh",
     "types":["Fire","Flying"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/250 HOME (Ver. 3.2.1).png"
   },
   "CELEBI": {
@@ -2155,16 +2451,22 @@
   "TREECKO": {
     "name":"Treecko",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Unburden"],
     "icon":"images/pokemon/252 HOME.png"
   },
   "GROVYLE": {
     "name":"Grovyle",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Unburden"],
     "icon":"images/pokemon/253 HOME.png"
   },
   "SCEPTILE": {
     "name":"Sceptile",
     "types":["Grass"],
+    "abilities":["Overgrow"],
+    "hiddenAbility":["Unburden"],
     "icon":"images/pokemon/254 HOME (Ver. 3.2.1).png"
   },
   "SCEPTILE-MEGA": {
@@ -2177,16 +2479,22 @@
   "TORCHIC": {
     "name":"Torchic",
     "types":["Fire"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Speed Boost"],
     "icon":"images/pokemon/255 HOME (Ver. 3.2.1).png"
   },
   "COMBUSKEN": {
     "name":"Combusken",
     "types":["Fire","Fighting"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Speed Boost"],
     "icon":"images/pokemon/256 HOME (Ver. 3.2.1).png"
   },
   "BLAZIKEN": {
     "name":"Blaziken",
     "types":["Fire","Fighting"],
+    "abilities":["Blaze"],
+    "hiddenAbility":["Speed Boost"],
     "icon":"images/pokemon/257 HOME.png"
   },
   "BLAZIKEN-MEGA": {
@@ -2199,16 +2507,22 @@
   "MUDKIP": {
     "name":"Mudkip",
     "types":["Water"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/258 HOME (Ver. 3.2.1).png"
   },
   "MARSHTOMP": {
     "name":"Marshtomp",
     "types":["Water","Ground"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/259 HOME.png"
   },
   "SWAMPERT": {
     "name":"Swampert",
     "types":["Water","Ground"],
+    "abilities":["Torrent"],
+    "hiddenAbility":["Damp"],
     "icon":"images/pokemon/260 HOME.png"
   },
   "SWAMPERT-MEGA": {
@@ -2221,36 +2535,50 @@
   "POOCHYENA": {
     "name":"Poochyena",
     "types":["Dark"],
+    "abilities":["Run Away", "Quick Feet"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/261 HOME (Ver. 3.0.0).png"
   },
   "MIGHTYENA": {
     "name":"Mightyena",
     "types":["Dark"],
+    "abilities":["Intimidate", "Quick Feet"],
+    "hiddenAbility":["Moxie"],
     "icon":"images/pokemon/262 HOME (Ver. 3.0.0).png"
   },
   "ZIGZAGOON": {
     "name":"Zigzagoon",
     "types":["Normal"],
+    "abilities":["Pickup", "Gluttony"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/263 HOME.png"
   },
   "ZIGZAGOON-GALAR": {
     "name":"Zigzagoon",
     "types":["Dark"],
+    "abilities":["Pickup", "Gluttony"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/263G HOME.png"
   },
   "LINOONE": {
     "name":"Linoone",
     "types":["Normal"],
+    "abilities":["Pickup", "Gluttony"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/264 HOME.png"
   },
   "LINOONE-GALAR": {
     "name":"Linoone",
     "types":["Dark"],
+    "abilities":["Pickup", "Gluttony"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/264 HOME.png"
   },
   "WURMPLE": {
     "name":"Wurmple",
     "types":["Bug"],
+    "abilities":["Shield Dust"],
+    "hiddenAbility":["Run Away"],
     "icon":"images/pokemon/265 HOME.png"
   },
   "SILCOON": {
@@ -2263,6 +2591,8 @@
   "BEAUTIFLY": {
     "name":"Beautifly",
     "types":["Bug","Flying"],
+    "abilities":["Swarm"],
+    "hiddenAbility":["Rivalry"],
     "icon":"images/pokemon/267 HOME.png"
   },
   "CASCOON": {
@@ -2275,71 +2605,99 @@
   "DUSTOX": {
     "name":"Dustox",
     "types":["Bug","Poison"],
+    "abilities":["Shield Dust"],
+    "hiddenAbility":["Compound Eyes"],
     "icon":"images/pokemon/269 HOME.png"
   },
   "LOTAD": {
     "name":"Lotad",
     "types":["Water","Grass"],
+    "abilities":["Swift Swim", "Rain Dish"],
+    "hiddenAbility":["Own Tempo"],
     "icon":"images/pokemon/270 HOME (Ver. 3.0.0).png"
   },
   "LOMBRE": {
     "name":"Lombre",
     "types":["Water","Grass"],
+    "abilities":["Swift Swim", "Rain Dish"],
+    "hiddenAbility":["Own Tempo"],
     "icon":"images/pokemon/271 HOME.png"
   },
   "LUDICOLO": {
     "name":"Ludicolo",
     "types":["Water","Grass"],
+    "abilities":["Swift Swim", "Rain Dish"],
+    "hiddenAbility":["Own Tempo"],
     "icon":"images/pokemon/272 HOME (Ver. 3.0.0).png"
   },
   "SEEDOT": {
     "name":"Seedot",
     "types":["Grass"],
+    "abilities":["Chlorophyll", "Early Bird"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/273 HOME.png"
   },
   "NUZLEAF": {
     "name":"Nuzleaf",
     "types":["Grass","Dark"],
+    "abilities":["Chlorophyll", "Early Bird"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/274 HOME (Ver. 3.0.0).png"
   },
   "SHIFTRY": {
     "name":"Shiftry",
     "types":["Grass","Dark"],
+    "abilities":["Chlorophyll", "Early Bird", "Wind Rider"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/275 HOME.png"
   },
   "TAILLOW": {
     "name":"Taillow",
     "types":["Normal","Flying"],
+    "abilities":["Guts"],
+    "hiddenAbility":["Scrappy"],
     "icon":"images/pokemon/276 HOME.png"
   },
   "SWELLOW": {
     "name":"Swellow",
     "types":["Normal","Flying"],
+    "abilities":["Guts"],
+    "hiddenAbility":["Scrappy"],
     "icon":"images/pokemon/277 HOME.png"
   },
   "WINGULL": {
     "name":"Wingull",
     "types":["Water","Flying"],
+    "abilities":["Keen Eye", "Hydration"],
+    "hiddenAbility":["Rain Dish"],
     "icon":"images/pokemon/279 HOME.png"
   },
   "PELIPPER": {
     "name":"Pelipper",
     "types":["Water","Flying"],
+    "abilities":["Keen Eye", "Drizzle"],
+    "hiddenAbility":["Rain Dish"],
     "icon":"images/pokemon/279 HOME.png"
   },
   "RALTS": {
     "name":"Ralts",
     "types":["Psychic","Fairy"],
+    "abilities":["Synchronize", "Trace"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/280 HOME.png"
   },
   "KIRLIA": {
     "name":"Kirlia",
     "types":["Psychic","Fairy"],
+    "abilities":["Synchronize", "Trace"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/281 HOME.png"
   },
   "GARDEVOIR": {
     "name":"Gardevoir",
     "types":["Psychic","Fairy"],
+    "abilities":["Synchronize", "Trace"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/282 HOME.png"
   },
   "GARDEVOIR-MEGA": {
@@ -2352,21 +2710,29 @@
   "SURSKIT": {
     "name":"Surskit",
     "types":["Bug","Water"],
+    "abilities":["Swift Swim"],
+    "hiddenAbility":["Rain Dish"],
     "icon":"images/pokemon/283 HOME.png"
   },
   "MASQUERAIN": {
     "name":"Masquerain",
     "types":["Bug","Flying"],
+    "abilities":["Intimidate"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/284 HOME.png"
   },
   "SHROOMISH": {
     "name":"Shroomish",
     "types":["Grass"],
+    "abilities":["Effect Spore", "Poison Heal"],
+    "hiddenAbility":["Quick Feet"],
     "icon":"images/pokemon/285 HOME.png"
   },
   "BRELOOM": {
     "name":"Breloom",
     "types":["Grass","Fighting"],
+    "abilities":["Effect Spore", "Poison Heal"],
+    "hiddenAbility":["Technician"],
     "icon":"images/pokemon/286 HOME.png"
   },
   "SLAKOTH": {
@@ -2393,11 +2759,15 @@
   "NINCADA": {
     "name":"Nincada",
     "types":["Bug","Ground"],
+    "abilities":["Compound Eyes"],
+    "hiddenAbility":["Run Away"],
     "icon":"images/pokemon/290 HOME.png"
   },
   "NINJASK": {
     "name":"Ninjask",
     "types":["Bug","Flying"],
+    "abilities":["Speed Boost"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/291 HOME.png"
   },
   "SHEDINJA": {
@@ -2410,53 +2780,71 @@
   "WHISMUR": {
     "name":"Whismur",
     "types":["Normal"],
+    "abilities":["Soundproof"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/293 HOME.png"
   },
   "LOUDRED": {
     "name":"Loudred",
     "types":["Normal"],
+    "abilities":["Soundproof"],
+    "hiddenAbility":["Scrappy"],
     "icon":"images/pokemon/294 HOME.png"
   },
   "EXPLOUD": {
-    "name":"Nidoran♀",
+    "name":"Exploud",
     "types":["Normal"],
+    "abilities":["Soundproof"],
+    "hiddenAbility":["Scrappy"],
     "icon":"images/pokemon/295 HOME.png"
   },
   "MAKUHITA": {
     "name":"Makuhita",
     "types":["Fighting"],
+    "abilities":["Thick Fat", "Guts"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/296 HOME.png"
   },
   "HARIYAMA": {
     "name":"Hariyama",
     "types":["Fighting"],
+    "abilities":["Thick Fat", "Guts"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/297 HOME.png"
   },
   "AZURILL": {
     "name":"Azurill",
     "types":["Normal","Fairy"],
+    "abilities":["Thick Fat", "Huge Power"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/298 HOME.png"
   },
   "NOSEPASS": {
     "name":"Nosepass",
     "types":["Rock"],
+    "abilities":["Sturdy", "Magnet Pull"],
+    "hiddenAbility":["Sand Force"],
     "icon":"images/pokemon/299 HOME.png"
   },
   "SKITTY": {
     "name":"Skitty",
     "types":["Normal"],
+    "abilities":["Cute Charm", "Normalize"],
+    "hiddenAbility":["Wonder Skin"],
     "icon":"images/pokemon/300 HOME.png"
   },
   "DELCATTY": {
     "name":"Delcatty",
     "types":["Normal"],
+    "abilities":["Cute Charm", "Normalize"],
+    "hiddenAbility":["Wonder Skin"],
     "icon":"images/pokemon/301 HOME.png"
   },
   "SABLEYE": {
     "name":"Sableye",
     "types":["Dark","Ghost"],
-    "abilities":["Magic Bounce"],
-    "hiddenAbility":[],
+    "abilities":["Keen Eye", "Stall"],
+    "hiddenAbility":["Prankster"],
     "icon":"images/pokemon/302 HOME.png"
   },
   "SABLEYE-MEGA": {
@@ -2468,6 +2856,8 @@
   "MAWILE": {
     "name":"Mawile",
     "types":["Steel","Fairy"],
+    "abilities":["Hyper Cutter", "Intimidate"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/303 HOME.png"
   },
   "MAWILE-MEGA": {
@@ -2480,16 +2870,22 @@
   "ARON": {
     "name":"Aron",
     "types":["Steel","Rock"],
+    "abilities":["Sturdy", "Rock Head"],
+    "hiddenAbility":["Heavy Metal"],
     "icon":"images/pokemon/304 HOME.png"
   },
   "LAIRON": {
     "name":"Lairon",
     "types":["Steel","Rock"],
+    "abilities":["Sturdy", "Rock Head"],
+    "hiddenAbility":["Heavy Metal"],
     "icon":"images/pokemon/305 HOME.png"
   },
   "AGGRON": {
     "name":"Aggron",
     "types":["Steel","Rock"],
+    "abilities":["Sturdy", "Rock Head"],
+    "hiddenAbility":["Heavy Metal"],
     "icon":"images/pokemon/306 HOME.png"
   },
   "AGGRON-MEGA": {
@@ -2502,11 +2898,15 @@
   "MEDITITE": {
     "name":"Meditite",
     "types":["Fighting","Psychic"],
+    "abilities":["Pure Power"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/307 HOME.png"
   },
   "MEDICHAM": {
     "name":"Medicham",
     "types":["Fighting","Psychic"],
+    "abilities":["Pure Power"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/308 HOME.png"
   },
   "MEDICHAM-MEGA": {
@@ -2519,11 +2919,15 @@
   "ELECTRIKE": {
     "name":"Electrike",
     "types":["Electric"],
+    "abilities":["Static", "Lightning Rod"],
+    "hiddenAbility":["Minus"],
     "icon":"images/pokemon/309 HOME.png"
   },
   "MANECTRIC": {
     "name":"Manectric",
     "types":["Electric"],
+    "abilities":["Static", "Lightning Rod"],
+    "hiddenAbility":["Minus"],
     "icon":"images/pokemon/310 HOME.png"
   },
   "MANECTRIC-MEGA": {
@@ -2536,46 +2940,64 @@
   "PLUSLE": {
     "name":"Plusle",
     "types":["Electric"],
+    "abilities":["Plus"],
+    "hiddenAbility":["Lightning Rod"],
     "icon":"images/pokemon/311 HOME.png"
   },
   "MINUN": {
     "name":"Minun",
     "types":["Electric"],
+    "abilities":["Minus"],
+    "hiddenAbility":["Volt Absorb"],
     "icon":"images/pokemon/312 HOME.png"
   },
   "VOLBEAT": {
     "name":"Volbeat",
     "types":["Bug"],
+    "abilities":["Illuminate", "Swarm"],
+    "hiddenAbility":["Prankster"],
     "icon":"images/pokemon/313 HOME.png"
   },
   "ILLUMISE": {
     "name":"Illumise",
     "types":["Bug"],
+    "abilities":["Oblivious", "Tinted Lens"],
+    "hiddenAbility":["Prankster"],
     "icon":"images/pokemon/314 HOME.png"
   },
   "ROSELIA": {
     "name":"Roselia",
     "types":["Grass","Poison"],
+    "abilities":["Natural Cure", "Poison Point"],
+    "hiddenAbility":["Leaf Guard"],
     "icon":"images/pokemon/315 HOME.png"
   },
   "GULPIN": {
     "name":"Gulpin",
     "types":["Poison"],
+    "abilities":["Liquid Ooze", "Sticky Hold"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/316 HOME.png"
   },
   "SWALOT": {
     "name":"Swalot",
     "types":["Poison"],
+    "abilities":["Liquid Ooze", "Sticky Hold"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/317 HOME.png"
   },
   "CARVANHA": {
     "name":"Carvanha",
     "types":["Water","Dark"],
+    "abilities":["Rough Skin"],
+    "hiddenAbility":["Speed Boost"],
     "icon":"images/pokemon/318 HOME.png"
   },
   "SHARPEDO": {
     "name":"Sharpedo",
     "types":["Water","Dark"],
+    "abilities":["Rough Skin"],
+    "hiddenAbility":["Speed Boost"],
     "icon":"images/pokemon/319 HOME.png"
   },
   "SHARPEDO-MEGA": {
@@ -2588,21 +3010,29 @@
   "WAILMER": {
     "name":"Wailmer",
     "types":["Water"],
+    "abilities":["Water Veil", "Oblivious"],
+    "hiddenAbility":["Pressure"],
     "icon":"images/pokemon/320 HOME.png"
   },
   "WAILORD": {
     "name":"Wailord",
     "types":["Water"],
+    "abilities":["Water Veil", "Oblivious"],
+    "hiddenAbility":["Pressure"],
     "icon":"images/pokemon/321 HOME.png"
   },
   "NUMEL": {
     "name":"Numel",
     "types":["Fire","Ground"],
+    "abilities":["Oblivious", "Simple"],
+    "hiddenAbility":["Own Tempo"],
     "icon":"images/pokemon/322 HOME.png"
   },
   "CAMERUPT": {
     "name":"Camerupt",
     "types":["Fire","Ground"],
+    "abilities":["Magma Armor", "Solid Rock"],
+    "hiddenAbility":["Anger Point"],
     "icon":"images/pokemon/323 HOME.png"
   },
   "CAMERUPT-MEGA": {
@@ -2615,26 +3045,36 @@
   "TORKOAL": {
     "name":"Torkoal",
     "types":["Fire"],
+    "abilities":["White Smoke", "Drought"],
+    "hiddenAbility":["Shell Armor"],
     "icon":"images/pokemon/324 HOME.png"
   },
   "SPOINK": {
     "name":"Spoink",
     "types":["Psychic"],
+    "abilities":["Thick Fat", "Own Tempo"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/325 HOME.png"
   },
   "GRUMPIG": {
     "name":"Grumpig",
     "types":["Psychic"],
+    "abilities":["Thick Fat", "Own Tempo"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/326 HOME.png"
   },
   "SPINDA": {
     "name":"Spinda",
     "types":["Normal"],
+    "abilities":["Own Tempo", "Tangled Feet"],
+    "hiddenAbility":["Contrary"],
     "icon":"images/pokemon/327 HOME.png"
   },
   "TRAPINCH": {
     "name":"Trapinch",
     "types":["Ground"],
+    "abilities":["Hyper Cutter", "Arena Trap"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/328 HOME (Ver. 3.2.1).png"
   },
   "VIBRAVA": {
@@ -2654,21 +3094,29 @@
   "CACNEA": {
     "name":"Cacnea",
     "types":["Grass"],
+    "abilities":["Sand Veil"],
+    "hiddenAbility":["Water Absorb"],
     "icon":"images/pokemon/331 HOME.png"
   },
   "CACTURNE": {
     "name":"Cacturne",
     "types":["Grass","Dark"],
+    "abilities":["Sand Veil"],
+    "hiddenAbility":["Water Absorb"],
     "icon":"images/pokemon/332 HOME.png"
   },
   "SWABLU": {
     "name":"Swablu",
     "types":["Normal","Flying"],
+    "abilities":["Natural Cure"],
+    "hiddenAbility":["Cloud Nine"],
     "icon":"images/pokemon/333 HOME.png"
   },
   "ALTARIA": {
     "name":"Altaria",
     "types":["Dragon","Flying"],
+    "abilities":["Natural Cure"],
+    "hiddenAbility":["Cloud Nine"],
     "icon":"images/pokemon/334 HOME.png"
   },
   "ALTARIA-MEGA": {
@@ -2681,11 +3129,15 @@
   "ZANGOOSE": {
     "name":"Zangoose",
     "types":["Normal"],
+    "abilities":["Immunity"],
+    "hiddenAbility":["Toxic Boost"],
     "icon":"images/pokemon/335 HOME.png"
   },
   "SEVIPER": {
     "name":"Seviper",
     "types":["Poison"],
+    "abilities":["Shed Skin"],
+    "hiddenAbility":["Infiltrator"],
     "icon":"images/pokemon/336 HOME.png"
   },
   "LUNATONE": {
@@ -2705,21 +3157,29 @@
   "BARBOACH": {
     "name":"Barboach",
     "types":["Water","Ground"],
+    "abilities":["Oblivious", "Anticipation"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/339 HOME.png"
   },
   "WHISCASH": {
     "name":"Whiscash",
     "types":["Water","Ground"],
+    "abilities":["Oblivious", "Anticipation"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/340 HOME.png"
   },
   "CORPHISH": {
     "name":"Corphish",
     "types":["Water"],
+    "abilities":["Hyper Cutter", "Shell Armor"],
+    "hiddenAbility":["Adaptability"],
     "icon":"images/pokemon/341 HOME.png"
   },
   "CRAWDAUNT": {
     "name":"Crawdaunt",
     "types":["Water","Dark"],
+    "abilities":["Hyper Cutter", "Shell Armor"],
+    "hiddenAbility":["Adaptability"],
     "icon":"images/pokemon/342 HOME.png"
   },
   "BALTOY": {
@@ -2739,31 +3199,43 @@
   "LILEEP": {
     "name":"Lileep",
     "types":["Rock","Grass"],
+    "abilities":["Suction Cups"],
+    "hiddenAbility":["Storm Drain"],
     "icon":"images/pokemon/345 HOME.png"
   },
   "CRADILY": {
     "name":"Cradily",
     "types":["Rock","Grass"],
+    "abilities":["Suction Cups"],
+    "hiddenAbility":["Storm Drain"],
     "icon":"images/pokemon/346 HOME.png"
   },
   "ANORITH": {
     "name":"Anorith",
     "types":["Rock","Bug"],
+    "abilities":["Battle Armor"],
+    "hiddenAbility":["Swift Swim"],
     "icon":"images/pokemon/347 HOME.png"
   },
   "ARMALDO": {
     "name":"Armaldo",
     "types":["Rock","Bug"],
+    "abilities":["Battle Armor"],
+    "hiddenAbility":["Swift Swim"],
     "icon":"images/pokemon/348 HOME.png"
   },
   "FEEBAS": {
     "name":"Feebas",
     "types":["Water"],
+    "abilities":["Swift Swim", "Oblivious"],
+    "hiddenAbility":["Adaptability"],
     "icon":"images/pokemon/349 HOME.png"
   },
   "MILOTIC": {
     "name":"Milotic",
     "types":["Water"],
+    "abilities":["Marvel Scale", "Competitive"],
+    "hiddenAbility":["Cute Charm"],
     "icon":"images/pokemon/350 HOME.png"
   },
   "CASTFORM": {
@@ -2797,16 +3269,22 @@
   "KECLEON": {
     "name":"Kecleon",
     "types":["Normal"],
+    "abilities":["Color Change"],
+    "hiddenAbility":["Protean"],
     "icon":"images/pokemon/352 HOME.png"
   },
   "SHUPPET": {
     "name":"Shuppet",
     "types":["Ghost"],
+    "abilities":["Insomnia", "Frisk"],
+    "hiddenAbility":["Cursed Body"],
     "icon":"images/pokemon/353 HOME.png"
   },
   "BANETTE": {
     "name":"Banette",
     "types":["Ghost"],
+    "abilities":["Insomnia", "Frisk"],
+    "hiddenAbility":["Cursed Body"],
     "icon":"images/pokemon/354 HOME.png"
   },
   "BANETTE-MEGA": {
@@ -2819,16 +3297,22 @@
   "DUSKULL": {
     "name":"Duskull",
     "types":["Ghost"],
+    "abilities":["Levitate"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/355 HOME (Ver. 3.0.0).png"
   },
   "DUSCLOPS": {
     "name":"Dusclops",
     "types":["Ghost"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/356 HOME (Ver. 3.0.0).png"
   },
   "TROPIUS": {
     "name":"Tropius",
     "types":["Grass","Flying"],
+    "abilities":["Chlorophyll", "Solar Power"],
+    "hiddenAbility":["Harvest"],
     "icon":"images/pokemon/357 HOME.png"
   },
   "CHIMECHO": {
@@ -2841,6 +3325,8 @@
   "ABSOL": {
     "name":"Absol",
     "types":["Dark"],
+    "abilities":["Pressure", "Super Luck"],
+    "hiddenAbility":["Justified"],
     "icon":"images/pokemon/359 HOME.png"
   },
   "ABSOL-MEGA": {
@@ -2853,16 +3339,22 @@
   "WYNAUT": {
     "name":"Wynaut",
     "types":["Psychic"],
+    "abilities":["Shadow Tag"],
+    "hiddenAbility":["Telepathy"],
     "icon":"images/pokemon/360 HOME.png"
   },
   "SNORUNT": {
     "name":"Snorunt",
     "types":["Ice"],
+    "abilities":["Inner Focus", "Ice Body"],
+    "hiddenAbility":["Moody"],
     "icon":"images/pokemon/361 HOME.png"
   },
   "GLALIE": {
     "name":"Glalie",
     "types":["Ice"],
+    "abilities":["Inner Focus", "Ice Body"],
+    "hiddenAbility":["Moody"],
     "icon":"images/pokemon/362 HOME.png"
   },
   "GLALIE-MEGA": {
@@ -2875,56 +3367,78 @@
   "SPHEAL": {
     "name":"Spheal",
     "types":["Ice","Water"],
+    "abilities":["Thick Fat", "Ice Body"],
+    "hiddenAbility":["Oblivious"],
     "icon":"images/pokemon/363 HOME.png"
   },
   "SEALEO": {
     "name":"Sealeo",
     "types":["Ice","Water"],
+    "abilities":["Thick Fat", "Ice Body"],
+    "hiddenAbility":["Oblivious"],
     "icon":"images/pokemon/364 HOME.png"
   },
   "WALREIN": {
     "name":"Walrein",
     "types":["Ice","Water"],
+    "abilities":["Thick Fat", "Ice Body"],
+    "hiddenAbility":["Oblivious"],
     "icon":"images/pokemon/365 HOME.png"
   },
   "CLAMPERL": {
     "name":"Clamperl",
     "types":["Water"],
+    "abilities":["Shell Armor"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/366 HOME.png"
   },
   "HUNTAIL": {
     "name":"Huntail",
     "types":["Water"],
+    "abilities":["Swift Swim"],
+    "hiddenAbility":["Water Veil"],
     "icon":"images/pokemon/367 HOME.png"
   },
   "GOREBYSS": {
     "name":"GOREBYSS",
     "types":["Water"],
+    "abilities":["Swift Swim"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/368 HOME.png"
   },
   "RELICANTH": {
     "name":"Relicanth",
     "types":["Water","Rock"],
+    "abilities":["Swift Swim", "Rock Head"],
+    "hiddenAbility":["Sturdy"],
     "icon":"images/pokemon/369 HOME.png"
   },
   "LUVDISC": {
     "name":"Luvdisc",
     "types":["Water"],
+    "abilities":["Swift Swim"],
+    "hiddenAbility":["Hydration"],
     "icon":"images/pokemon/370 HOME.png"
   },
   "BAGON": {
     "name":"Bagon",
     "types":["Dragon"],
+    "abilities":["Rock Head"],
+    "hiddenAbility":["Sheer Force"],
     "icon":"images/pokemon/371 HOME.png"
   },
   "SHELGON": {
     "name":"Shelgon",
     "types":["Dragon"],
+    "abilities":["Rock Head"],
+    "hiddenAbility":["Overcoat"],
     "icon":"images/pokemon/372 HOME.png"
   },
   "SALAMENCE": {
     "name":"Salamence",
     "types":["Dragon","Flying"],
+    "abilities":["Intimidate"],
+    "hiddenAbility":["Moxie"],
     "icon":"images/pokemon/373 HOME.png"
   },
   "SALAMENCE-MEGA": {
@@ -2937,16 +3451,22 @@
   "BELDUM": {
     "name":"Beldum",
     "types":["Steel","Psychic"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Light Metal"],
     "icon":"images/pokemon/374 HOME (Ver. 3.2.1).png"
   },
   "METANG": {
     "name":"Metang",
     "types":["Normal"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Light Metal"],
     "icon":"images/pokemon/375 HOME (Ver. 3.2.1).png"
   },
   "METAGROSS": {
     "name":"Metagross",
     "types":["Steel","Psychic"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Light Metal"],
     "icon":"images/pokemon/376 HOME.png"
   },
   "METAGROSS-MEGA": {
@@ -2959,16 +3479,22 @@
   "REGIROCK": {
     "name":"Regirock",
     "types":["Rock"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Sturdy"],
     "icon":"images/pokemon/377 HOME (Ver. 3.2.1).png"
   },
   "REGICE": {
     "name":"Regice",
     "types":["Ice"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Ice Body"],
     "icon":"images/pokemon/378 HOME (Ver. 3.2.1).png"
   },
   "REGISTEEL": {
     "name":"Registeel",
     "types":["Steel"],
+    "abilities":["Clear Body"],
+    "hiddenAbility":["Light Metal"],
     "icon":"images/pokemon/379 HOME.png"
   },
   "LATIAS": {
@@ -3174,11 +3700,15 @@
   "BUDEW": {
     "name":"Budew",
     "types":["Grass","Poison"],
+    "abilities":["Natural Cure", "Poison Point"],
+    "hiddenAbility":["Leaf Guard"],
     "icon":"images/pokemon/406 HOME.png"
   },
   "ROSERADE": {
     "name":"Roserade",
     "types":["Grass","Poison"],
+    "abilities":["Natural Cure", "Poison Point"],
+    "hiddenAbility":["Technician"],
     "icon":"images/pokemon/407 HOME.png"
   },
   "CRANIDOS": {
@@ -3305,6 +3835,8 @@
   "AMBIPOM": {
     "name":"Ambipom",
     "types":["Normal"],
+    "abilities":["Technician", "Pickup"],
+    "hiddenAbility":["Skill Link"],
     "icon":"images/pokemon/424 HOME.png"
   },
   "DRIFLOON": {
@@ -3344,6 +3876,8 @@
   "HONCHKROW": {
     "name":"Honchkrow",
     "types":["Dark","Flying"],
+    "abilities":["Insomnia", "Super Luck"],
+    "hiddenAbility":["Moxie"],
     "icon":"images/pokemon/430 HOME.png"
   },
   "GLAMEOW": {
@@ -3386,16 +3920,22 @@
   "BONSLY": {
     "name":"Bonsly",
     "types":["Rock"],
+    "abilities":["Sturdy", "Rock Head"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/438 HOME.png"
   },
   "MIME JR.": {
     "name":"Mime Jr.",
     "types":["Psychic","Fairy"],
+    "abilities":["Soundproof", "Filter"],
+    "hiddenAbility":["Technician"],
     "icon":"images/pokemon/439 HOME.png"
   },
   "HAPPINY": {
     "name":"Happiny",
     "types":["Normal"],
+    "abilities":["Natural Cure", "Serene Grace"],
+    "hiddenAbility":["Friend Guard"],
     "icon":"images/pokemon/440 HOME.png"
   },
   "CHATOT": {
@@ -3433,6 +3973,8 @@
   "MUNCHLAX": {
     "name":"Munchlax",
     "types":["Normal"],
+    "abilities":["Pickup", "Thick Fat"],
+    "hiddenAbility":["Gluttony"],
     "icon":"images/pokemon/446 HOME (Ver. 3.0.0).png"
   },
   "RIOLU": {
@@ -3502,6 +4044,8 @@
   "MANTYKE": {
     "name":"Mantyke",
     "types":["Water","Flying"],
+    "abilities":["Swift Swim", "Water Absorb"],
+    "hiddenAbility":["Water Veil"],
     "icon":"images/pokemon/458 HOME.png"
   },
   "SNOVER": {
@@ -3524,76 +4068,106 @@
   "WEAVILE": {
     "name":"Weavile",
     "types":["Dark","Ice"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Pickpocket"],
     "icon":"images/pokemon/461 HOME.png"
   },
   "MAGNEZONE": {
     "name":"Magnezone",
     "types":["Electric","Steel"],
+    "abilities":["Magnet Pull", "Sturdy"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/462 HOME.png"
   },
   "LICKILICKY": {
     "name":"Lickilicky",
     "types":["Normal"],
+    "abilities":["Own Tempo", "Oblivious"],
+    "hiddenAbility":["Cloud Nine"],
     "icon":"images/pokemon/463 HOME.png"
   },
   "RHYPERIOR": {
     "name":"Rhyperior",
     "types":["Ground","Rock"],
+    "abilities":["Lightning Rod", "Solid Rock"],
+    "hiddenAbility":["Reckless"],
     "icon":"images/pokemon/464 HOME.png"
   },
   "TANGROWTH": {
     "name":"Tangrowth",
     "types":["Grass"],
+    "abilities":["Chlorophyll", "Leaf Guard"],
+    "hiddenAbility":["Regenerator"],
     "icon":"images/pokemon/465 HOME.png"
   },
   "ELECTIVIRE": {
     "name":"Electivire",
     "types":["Electric"],
+    "abilities":["Motor Drive"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/466 HOME.png"
   },
   "MAGMORTAR": {
     "name":"Magmortar",
     "types":["Fire"],
+    "abilities":["Flame Body"],
+    "hiddenAbility":["Vital Spirit"],
     "icon":"images/pokemon/467 HOME.png"
   },
   "TOGEKISS": {
     "name":"Togekiss",
     "types":["Fairy","Flying"],
+    "abilities":["Hustle", "Serene Grace"],
+    "hiddenAbility":["Super Luck"],
     "icon":"images/pokemon/468 HOME.png"
   },
   "YANMEGA": {
     "name":"Yanmega",
     "types":["Bug","Flying"],
+    "abilities":["Speed Boost", "Tinted Lens"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/469 HOME.png"
   },
   "LEAFEON": {
     "name":"Leafeon",
     "types":["Grass"],
+    "abilities":["Leaf Guard"],
+    "hiddenAbility":["Chlorophyll"],
     "icon":"images/pokemon/470 HOME.png"
   },
   "GLACEON": {
     "name":"Glaceon",
     "types":["Ice"],
+    "abilities":["Snow Cloak"],
+    "hiddenAbility":["Ice Body"],
     "icon":"images/pokemon/471 HOME.png"
   },
   "GLISCOR": {
     "name":"Gliscor",
     "types":["Ground","Flying"],
+    "abilities":["Hyper Cutter", "Sand Veil"],
+    "hiddenAbility":["Poison Heal"],
     "icon":"images/pokemon/472 HOME.png"
   },
   "MAMOSWINE": {
     "name":"Mamoswine",
     "types":["Ice","Ground"],
+    "abilities":["Oblivious", "Snow Cloak"],
+    "hiddenAbility":["Thick Fat"],
     "icon":"images/pokemon/473 HOME.png"
   },
   "PORYGON-Z": {
     "name":"Porygon-Z",
     "types":["Normal"],
+    "abilities":["Adaptability", "Download"],
+    "hiddenAbility":["Analytic"],
     "icon":"images/pokemon/474 HOME (Ver. 3.2.1).png"
   },
   "GALLADE": {
     "name":"Gallade",
     "types":["Psychic","Fighting"],
+    "abilities":["Steadfast", "Sharpness"],
+    "hiddenAbility":["Justified"],
     "icon":"images/pokemon/475 HOME.png"
   },
   "GALLADE-MEGA": {
@@ -3606,16 +4180,22 @@
   "PROBOPASS": {
     "name":"Probopass",
     "types":["Rock","Steel"],
+    "abilities":["Sturdy", "Magnet Pull"],
+    "hiddenAbility":["Sand Force"],
     "icon":"images/pokemon/476 HOME.png"
   },
   "DUSKNOIR": {
     "name":"Dusknoir",
     "types":["Ghost"],
+    "abilities":["Pressure"],
+    "hiddenAbility":["Frisk"],
     "icon":"images/pokemon/477 HOME.png"
   },
   "FROSLASS": {
     "name":"Froslass",
     "types":["Ice","Ghost"],
+    "abilities":["Snow Cloak"],
+    "hiddenAbility":["Cursed Body"],
     "icon":"images/pokemon/478 HOME.png"
   },
   "ROTOM": {
@@ -5423,6 +6003,8 @@
   "SYLVEON": {
     "name":"Sylveon",
     "types":["Fairy"],
+    "abilities":["Cute Charm"],
+    "hiddenAbility":["Pixilate"],
     "icon":"images/pokemon/700 HOME.png"
   },
   "HAWLUCHA": {
@@ -6663,26 +7245,36 @@
   "OBSTAGOON": {
     "name":"Obstagoon",
     "types":["Dark","Normal"],
+    "abilities":["Reckless", "Guts"],
+    "hiddenAbility":["Defiant"],
     "icon":"images/pokemon/862 HOME.png"
   },
   "PERRSERKER": {
     "name":"Perrserker",
     "types":["Steel"],
+    "abilities":["Battle Armor", "Tough Claws"],
+    "hiddenAbility":["Steely Spirit"],
     "icon":"images/pokemon/863 HOME.png"
   },
   "CURSOLA": {
     "name":"Cursola",
     "types":["Ghost"],
+    "abilities":["Weak Armor"],
+    "hiddenAbility":["Perish Body"],
     "icon":"images/pokemon/864 HOME.png"
   },
   "SIRFETCH'D": {
     "name":"Sirfetch'd",
     "types":["Fighting"],
+    "abilities":["Steadfast"],
+    "hiddenAbility":["Scrappy"],
     "icon":"images/pokemon/865 HOME.png"
   },
   "MR. RIME": {
     "name":"Mr. Rime",
     "types":["Ice","Psychic"],
+    "abilities":["Tangled Feet", "Screen Cleaner"],
+    "hiddenAbility":["Ice Body"],
     "icon":"images/pokemon/866 HOME.png"
   },
   "RUNERIGUS": {
@@ -6979,16 +7571,22 @@
   "WYRDEER": {
     "name":"Wyrdeer",
     "types":["Normal","Psychic"],
+    "abilities":["Intimidate", "Frisk"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/899 HOME.png"
   },
   "KLEAVOR": {
     "name":"Kleavor",
     "types":["Bug","Rock"],
+    "abilities":["Swarm", "Sheer Force"],
+    "hiddenAbility":["Sharpness"],
     "icon":"images/pokemon/900 HOME.png"
   },
   "URSALUNA": {
     "name":"Ursaluna",
     "types":["Ground","Normal"],
+    "abilities":["Guts", "Bulletproof"],
+    "hiddenAbility":["Unnerve"],
     "icon":"images/pokemon/901 HOME.png"
   },
   "URSALUNA-BLOODMOON": {
@@ -7011,11 +7609,15 @@
   "SNEASLER": {
     "name":"Sneasler",
     "types":["Fighting","Poison"],
+    "abilities":["Pressure", "Unburden"],
+    "hiddenAbility":["Poison Touch"],
     "icon":"images/pokemon/903 HOME.png"
   },
   "OVERQWIL": {
     "name":"Overqwil",
     "types":["Dark","Poison"],
+    "abilities":["Poison Point", "Swift Swim"],
+    "hiddenAbility":["Intimidate"],
     "icon":"images/pokemon/904 HOME.png"
   },
   "ENAMORUS": {
@@ -7448,21 +8050,29 @@
   "ANNIHILAPE": {
     "name":"Annihilape",
     "types":["Fighting","Ghost"],
+    "abilities":["Vital Spirit", "Inner Focus"],
+    "hiddenAbility":["Defiant"],
     "icon":"images/pokemon/979 HOME.png"
   },
   "CLODSIRE": {
     "name":"Clodsire",
     "types":["Poison","Ground"],
+    "abilities":["Poison Point", "Water Absorb"],
+    "hiddenAbility":["Unaware"],
     "icon":"images/pokemon/980 HOME.png"
   },
   "FARIGIRAF": {
     "name":"Farigiraf",
     "types":["Normal","Psychic"],
+    "abilities":["Cud Chew", "Armor Tail"],
+    "hiddenAbility":["Sap Sipper"],
     "icon":"images/pokemon/981 HOME.png"
   },
   "DUDUNSPARCE": {
     "name":"Dudunsparce",
     "types":["Normal"],
+    "abilities":["Serene Grace", "Run Away"],
+    "hiddenAbility":["Rattled"],
     "icon":"images/pokemon/982 HOME.png"
   },
   "KINGAMBIT": {
